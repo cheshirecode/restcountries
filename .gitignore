@@ -1,0 +1,9 @@
+pids
+logs
+results
+tmp
+coverage
+.env
+.DS_Store
+Thumbs.db
+node_modules
