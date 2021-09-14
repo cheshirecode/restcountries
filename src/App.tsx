@@ -1,37 +1,31 @@
-import React, { useState, useEffect, FC } from 'react';
-import logo from './logo.svg';
-import './App.css';
+/** @jsx jsx */
+import type { FC } from 'react';
+import { ThemeProvider, useTheme, css, jsx } from '@emotion/react';
+import themes from './themes';
+import type { Theme } from './themes';
 
-// eslint-disable-next-line @typescript-eslint/no-empty-interface
-interface AppProps {}
+const App: FC = () => {
+  const theme = useTheme() as Theme;
 
-const App: FC<AppProps> = () => {
-  // Create the count state.
-  const [count, setCount] = useState(0);
-  // Create the counter (+1 every second).
-  useEffect(() => {
-    const timer = setTimeout(() => setCount(count + 1), 1000);
-    return () => clearTimeout(timer);
-  }, [count, setCount]);
-  // Return the App component.
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <p>
-          Page has been open for <code>{count}</code> seconds.
-        </p>
-        <p>
-          <a className="App-link" href="https://reactjs.org" target="_blank" rel="noopener noreferrer">
-            Learn React
-          </a>
-        </p>
-      </header>
+    <div
+      css={css`
+        background-color: ${theme.colors.background};
+        color: ${theme.colors.text};
+      `}
+    >
+      <header>header</header>
+      <main>main</main>
+      <footer>footer</footer>
     </div>
   );
 };
+const ThemedApp: FC = ({ children, ...props }) => {
+  return (
+    <ThemeProvider theme={themes.dark}>
+      <App {...props} />
+    </ThemeProvider>
+  );
+};
 
-export default App;
+export default ThemedApp;
