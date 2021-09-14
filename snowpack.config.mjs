@@ -15,6 +15,7 @@ export default {
         ...(process.versions.pnp ? { tsc: 'yarn pnpify tsc' } : {}),
       },
     ],
+    'snowpack-plugin-relative-css-urls',
     '@snowpack/plugin-postcss',
   ],
   routes: [
