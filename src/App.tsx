@@ -1,10 +1,11 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, FC } from 'react';
 import logo from './logo.svg';
 import './App.css';
 
+// eslint-disable-next-line @typescript-eslint/no-empty-interface
 interface AppProps {}
 
-function App({}: AppProps) {
+const App: FC<AppProps> = () => {
   // Create the count state.
   const [count, setCount] = useState(0);
   // Create the counter (+1 every second).
@@ -24,18 +25,13 @@ function App({}: AppProps) {
           Page has been open for <code>{count}</code> seconds.
         </p>
         <p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
+          <a className="App-link" href="https://reactjs.org" target="_blank" rel="noopener noreferrer">
             Learn React
           </a>
         </p>
       </header>
     </div>
   );
-}
+};
 
 export default App;
