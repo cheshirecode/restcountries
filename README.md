@@ -1,46 +1,25 @@
-### Objective
+# New Project
 
-Your challenge is to integrate with the [REST Countries API](https://restcountries.eu) to pull country data and display it like in the designs. Use TypeScript and any framework.
+> ✨ Bootstrapped with Create Snowpack App (CSA).
 
-### Brief
+## Available Scripts
 
-Your task is to build out the project to the designs inside the `/design` folder.
+### npm start
 
-In this challenge, you will find mobile and desktop designs in light and dark mode color schemes for both pages.
+Runs the app in the development mode.
+Open http://localhost:8080 to view it in the browser.
 
-The designs are in JPG static format. This will mean that you'll need to use your best judgment for styles such as `font-size`, `padding` and `margin`. This should help train your eye to perceive differences in spacings and sizes.
+The page will reload if you make edits.
+You will also see any lint errors in the console.
 
-There are no assets for this challenge, as the country flags will be pulled from the [REST Countries API](https://restcountries.eu) and you can use an icon font library for the icons.
+### npm run build
 
-There is a `style-guide.md` file, which contains the information you'll need, such as color palette and fonts.
+Builds a static copy of your site to the `build/` folder.
+Your app is ready to be deployed!
 
-Your users should be able to:
+**For the best production performance:** Add a build bundler plugin like "@snowpack/plugin-webpack" to your `snowpack.config.mjs` config file.
 
--   See all countries from the API on the homepage
--   Search for a country using an `input` field
--   Filter countries by region
--   Click on a country to see more detailed information on a separate page
--   Click through to the border countries on the detail page
--   Toggle the color scheme between light and dark mode _(optional)_
+### npm test
 
-### Evaluation Criteria
-
--   **TypeScript** best practices
--   Show us your work through your commit history
--   We're looking for you to produce working code, with enough room to demonstrate how to structure components in a small program
--   Completeness: Did you complete the features?
--   Correctness: Does the functionality act in sensible, thought-out ways?
--   Maintainability: Is it written in a clean, maintainable way?
--   Testing: Is the system adequately tested?
-
-### Deliverables
-
--   [ ] Make sure to include all source code in the repository. **Include a fully built version of your assignment in a folder named public or dist**. Also, make sure the public/ or dist/ folder is not in your .gitignore file..
-
-### CodeSubmit
-
-Please organize, design, test and document your code as if it were going into production - then push your changes to the master branch. After you have pushed your code, you may submit the assignment on the assignment page.
-
-All the best and happy coding,
-
-The Padlet Team
+Launches the application test runner.
+Run with the `--watch` flag (`npm test -- --watch`) to run in interactive watch mode.
