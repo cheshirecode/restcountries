@@ -4,7 +4,10 @@ const common = {
     heading: 'inherit',
     monospace: 'Menlo, monospace',
   },
+  // using typographic scale, set a root-level font size and specific length in CSS units (relative - em or absolute - rem)
   fontSizes: [12, 14, 16, 20, 24, 32, 48, 64, 72],
+  // default breakpoints in CSS units
+  breakpoints: ['40em', '52em', '64em'],
   fontWeights: {
     body: 300,
     heading: 600,
@@ -50,7 +53,8 @@ export interface Theme {
     heading: number;
     display: number;
   };
-  [key: string]: Record<string, unknown> | number[];
+  breakpoints: string[];
+  [key: string]: Record<string, unknown> | number[] | string[];
 }
 
 const light: Theme = {
