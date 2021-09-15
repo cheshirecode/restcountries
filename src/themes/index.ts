@@ -1,9 +1,12 @@
 const common = {
+  // Default Breakpoints
+  breakpoints: ['40em', '52em', '64em'],
   fonts: {
     body: '"Nunito Sans", sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", sans-serif',
     heading: 'inherit',
     monospace: 'Menlo, monospace',
   },
+  // using typographic scale, set a root-level font size and all
   fontSizes: [12, 14, 16, 20, 24, 32, 48, 64, 72],
   fontWeights: {
     body: 300,
@@ -50,7 +53,8 @@ export interface Theme {
     heading: number;
     display: number;
   };
-  [key: string]: Record<string, unknown> | number[];
+  breakpoints: string[];
+  [key: string]: Record<string, unknown> | number[] | string[];
 }
 
 const light: Theme = {
