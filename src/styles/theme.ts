@@ -36,46 +36,22 @@ const common = {
       color: 'text',
       fontSize: [1, 2],
     },
-    caps: {
-      textTransform: 'uppercase',
-      letterSpacing: '0.2em',
-    },
+    // caps: {
+    //   textTransform: 'uppercase',
+    //   letterSpacing: '0.2em',
+    // },
   },
   // define convenient border style based on theme's text colour or fall back to black
   borders: {
     thick: '2px solid var(--theme-ui-colors-text, black)',
     thin: '1px solid var(--theme-ui-colors-text, black)',
   },
-};
-
-export interface Theme {
-  colors: {
-    text: string;
-    background: string;
-    primary: string;
-    secondary: string;
-    muted: string;
-    highlight: string;
-    [key: string]: string;
-  };
-  fonts: {
-    body: string;
-    heading: string;
-    monospace: string;
-  };
-  fontSizes: number[];
-  space: number[];
-  fontWeights: {
-    body: number;
-    heading: number;
-    display: number;
-  };
-  breakpoints: string[];
-  [key: string]: Record<string, unknown> | number[] | string[];
-}
-
-const light: Theme = {
-  ...common,
+  config: {
+    initialColorModeName: 'light',
+    printColorModeName: 'light',
+    useColorSchemeMediaQuery: true, // by default, follows prefers-color-scheme
+    useLocalStorage: true,
+  },
   colors: {
     text: '#000',
     background: '#fafafa',
@@ -83,21 +59,17 @@ const light: Theme = {
     secondary: '#30c',
     highlight: '#b5d5ff',
     muted: '#fff',
+    modes: {
+      dark: {
+        text: '#fff',
+        background: '#222D37',
+        primary: '#3cf',
+        secondary: '#e0f',
+        highlight: '#29112c',
+        muted: '#2C3743',
+      },
+    },
   },
 };
 
-const dark: Theme = {
-  ...common,
-  colors: {
-    text: '#fff',
-    background: '#222D37',
-    primary: '#3cf',
-    secondary: '#e0f',
-    highlight: '#29112c',
-    muted: '#2C3743',
-  },
-};
-
-const themes = { light, dark };
-
-export default themes;
+export default common;
