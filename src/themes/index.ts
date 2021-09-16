@@ -32,6 +32,14 @@ const common = {
       letterSpacing: '-0.03em',
       mt: 3,
     },
+    default: {
+      color: 'text',
+      fontSize: [1, 2],
+    },
+    caps: {
+      textTransform: 'uppercase',
+      letterSpacing: '0.2em',
+    },
   },
   // define convenient border style based on theme's text colour or fall back to black
   borders: {
