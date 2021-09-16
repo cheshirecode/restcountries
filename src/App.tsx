@@ -2,6 +2,8 @@
 import type { FC } from 'react';
 import { ThemeProvider, jsx /* , useTheme, css */ } from '@emotion/react';
 import Header from './components/Header';
+import Main from './components/Main';
+import Footer from './components/Footer';
 
 import themes from './themes';
 import type { Theme } from './themes';
@@ -11,11 +13,11 @@ const App: FC<{ theme?: Theme; className?: string }> = ({ className }) => {
   // const theme = useTheme() as Theme;
 
   return (
-    <div className={className}>
+    <article className={className}>
       <Header />
-      <main>main</main>
-      <footer>footer</footer>
-    </div>
+      <Main />
+      <Footer />
+    </article>
   );
 };
 
