@@ -27,8 +27,8 @@ const App: FC<BaseComponent> = ({ className }) => {
         },
       }}
     >
-      <Box bg="muted">
-        <Header data-testid="header" className="layout--header" />
+      <Box bg="muted" as="header" data-testid="header">
+        <Header className="layout--header" />
       </Box>
       <Box
         py={0}
@@ -37,10 +37,11 @@ const App: FC<BaseComponent> = ({ className }) => {
           borderColor: 'text', // currently --theme-ui-colors-text doesn't work yet
           flex: '1 1 auto',
         }}
+        as="main"
       >
         <Main data-testid="main" className="layout--main" />
       </Box>
-      <Box>
+      <Box as="footer">
         <Footer data-testid="footer" className="layout--main" />
       </Box>
     </Flex>
