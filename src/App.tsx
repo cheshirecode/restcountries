@@ -14,9 +14,9 @@ const App: FC<{ theme?: Theme; className?: string }> = ({ className }) => {
 
   return (
     <article className={className}>
-      <Header />
-      <Main />
-      <Footer />
+      <Header data-testid="header" />
+      <Main data-testid="main" />
+      <Footer data-testid="footer" />
     </article>
   );
 };
