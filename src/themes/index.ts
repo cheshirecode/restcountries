@@ -33,6 +33,11 @@ const common = {
       mt: 3,
     },
   },
+  // define convenient border style based on theme's text colour or fall back to black
+  borders: {
+    thick: '2px solid var(--theme-ui-colors-text, black)',
+    thin: '1px solid var(--theme-ui-colors-text, black)',
+  },
 };
 
 export interface Theme {
