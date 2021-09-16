@@ -21,17 +21,17 @@ const App: FC<BaseComponent> = ({ className }) => {
         flexDirection: 'column',
         backgroundColor: 'background',
         color: 'text',
+        '> *': {
+          px: [3, 4],
+          py: [4, 2],
+        },
       }}
     >
-      <Box
-        py={[1, 2]}
-        sx={{
-          backgroundColor: 'muted',
-        }}
-      >
+      <Box bg="muted">
         <Header data-testid="header" className="layout--header" />
       </Box>
       <Box
+        py={0}
         sx={{
           border: 'thin',
           borderColor: 'text', // currently --theme-ui-colors-text doesn't work yet
@@ -40,7 +40,7 @@ const App: FC<BaseComponent> = ({ className }) => {
       >
         <Main data-testid="main" className="layout--main" />
       </Box>
-      <Box py={[1, 2]}>
+      <Box>
         <Footer data-testid="footer" className="layout--main" />
       </Box>
     </Flex>
