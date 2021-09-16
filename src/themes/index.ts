@@ -8,6 +8,8 @@ const common = {
   fontSizes: [12, 14, 16, 20, 24, 32, 48, 64, 72],
   // default breakpoints in CSS units
   breakpoints: ['40em', '52em', '64em'],
+  // base scale for use with layout-related CSS properties like margin, padding, etc
+  space: [0, 4, 8, 16, 32, 64, 128, 256, 512],
   fontWeights: {
     body: 300,
     heading: 600,
@@ -48,6 +50,7 @@ export interface Theme {
     monospace: string;
   };
   fontSizes: number[];
+  space: number[];
   fontWeights: {
     body: number;
     heading: number;
