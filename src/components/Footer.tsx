@@ -3,7 +3,7 @@ import type { FC } from 'react';
 import { jsx /* , useTheme, css */ } from '@emotion/react';
 import { cx } from '@emotion/css';
 import styled from '@emotion/styled';
-import type { BaseComponent } from '../typings/common';
+import type { BaseComponent } from '../typings';
 
 const Footer: FC<BaseComponent> = ({ className, ...props }) => (
   <footer className={cx(className, 'footer')} data-testid={props['data-testid']}>

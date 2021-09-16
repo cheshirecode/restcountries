@@ -1,17 +1,16 @@
 /** @jsx jsx */
 import type { FC } from 'react';
-import { ThemeProvider, jsx /* , useTheme, css */ } from '@emotion/react';
+import { jsx } from '@emotion/react';
+import ThemeHandler from './components/ThemeHandler';
 import Header from './components/Header';
 import Main from './components/Main';
 import Footer from './components/Footer';
 
-import themes from './themes';
-import type { Theme } from './themes';
+import type { BaseComponent } from './typings';
+
 import styled from '@emotion/styled';
 
-const App: FC<{ theme?: Theme; className?: string }> = ({ className }) => {
-  // const theme = useTheme() as Theme;
-
+const App: FC<BaseComponent> = ({ className }) => {
   return (
     <article className={className}>
       <Header data-testid="header" />
@@ -28,9 +27,9 @@ const StyledApp = styled(App)((props) => ({
 
 const ThemedApp: FC = ({ children, ...props }) => {
   return (
-    <ThemeProvider theme={themes.dark}>
+    <ThemeHandler>
       <StyledApp {...props} />
-    </ThemeProvider>
+    </ThemeHandler>
   );
 };
 
