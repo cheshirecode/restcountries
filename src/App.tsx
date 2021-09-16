@@ -33,7 +33,7 @@ const App: FC<BaseComponent> = ({ className }) => {
       <Box
         py={0}
         sx={{
-          border: 'thin',
+          border: 'thin', // TODO - remove after working version
           borderColor: 'text', // currently --theme-ui-colors-text doesn't work yet
           flex: '1 1 auto',
         }}
