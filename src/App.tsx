@@ -12,7 +12,13 @@ import styled from '@emotion/styled';
 
 const App: FC<BaseComponent> = ({ className }) => {
   return (
-    <Box className={cx(className, 'layout')}>
+    <Box
+      className={cx(className, 'layout')}
+      sx={{
+        // root-level font size for typographic scale
+        fontSize: [1, 2],
+      }}
+    >
       <Box>
         <Header data-testid="header" className="layout--header" />
       </Box>

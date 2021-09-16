@@ -4,4 +4,5 @@
 body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  font-size: 16px;  /* ease of scale, most browsers already default to 16px but just in case */
 }
