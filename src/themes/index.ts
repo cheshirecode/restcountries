@@ -48,6 +48,7 @@ export interface Theme {
     secondary: string;
     muted: string;
     highlight: string;
+    [key: string]: string;
   };
   fonts: {
     body: string;
@@ -69,11 +70,11 @@ const light: Theme = {
   ...common,
   colors: {
     text: '#000',
-    background: '#fff',
-    primary: '#11e',
-    secondary: '#c0c',
-    highlight: '#e0e',
-    muted: '#f6f6ff',
+    background: '#fafafa',
+    primary: '#07c',
+    secondary: '#30c',
+    highlight: '#b5d5ff',
+    muted: '#fff',
   },
 };
 
@@ -81,11 +82,11 @@ const dark: Theme = {
   ...common,
   colors: {
     text: '#fff',
-    background: '#000',
-    primary: '#0fc',
-    secondary: '#0cf',
-    highlight: '#f0c',
-    muted: '#011',
+    background: '#222D37',
+    primary: '#3cf',
+    secondary: '#e0f',
+    highlight: '#29112c',
+    muted: '#2C3743',
   },
 };
 
