@@ -70,6 +70,12 @@ const common = {
       },
     },
   },
+  styles: {
+    root: {
+      fontFamily: 'body',
+      fontWeight: 'body',
+    },
+  },
 };
 
 export default common;
