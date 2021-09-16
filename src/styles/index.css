@@ -1,5 +1,5 @@
-@import url('styles/fonts.css');
-@import url('styles/modern-reset.css');
+@import url('./fonts.css');
+@import url('./modern-reset.css');
 
 body {
   -webkit-font-smoothing: antialiased;
