@@ -7,7 +7,7 @@
  * --- flexible main          ---
  */
 import { jsx } from '@emotion/react';
-import { Flex, Box } from 'theme-ui';
+import { Flex } from 'theme-ui';
 import type { FC } from 'react';
 import type { BaseComponent } from '../../typings';
 import { subtractFromTotal } from '../../utils';
