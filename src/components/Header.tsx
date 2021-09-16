@@ -1,7 +1,7 @@
 /** @jsx jsx */
 import type { FC } from 'react';
 import { jsx /* , useTheme, css */ } from '@emotion/react';
-import type { BaseComponent } from '../typings/common';
+import type { BaseComponent } from '../typings';
 
 import { cx } from '@emotion/css';
 import styled from '@emotion/styled';
