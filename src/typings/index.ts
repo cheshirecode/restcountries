@@ -1,4 +1,4 @@
-import type { Theme } from '../themes';
+import type { Theme } from 'theme-ui';
 
 export interface BaseComponent {
   theme?: Theme;
