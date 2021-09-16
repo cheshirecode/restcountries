@@ -8,7 +8,6 @@ import Footer from './components/Footer';
 import { Flex, Box } from 'theme-ui';
 import type { BaseComponent } from './typings';
 import { cx } from '@emotion/css';
-import styled from '@emotion/styled';
 
 const App: FC<BaseComponent> = ({ className }) => {
   return (
@@ -20,9 +19,16 @@ const App: FC<BaseComponent> = ({ className }) => {
         fontSize: [1, 2],
         height: '100vh',
         flexDirection: 'column',
+        backgroundColor: 'background',
+        color: 'text',
       }}
     >
-      <Box py={[1, 2]}>
+      <Box
+        py={[1, 2]}
+        sx={{
+          backgroundColor: 'muted',
+        }}
+      >
         <Header data-testid="header" className="layout--header" />
       </Box>
       <Box
@@ -41,15 +47,10 @@ const App: FC<BaseComponent> = ({ className }) => {
   );
 };
 
-const StyledApp = styled(App)((props) => ({
-  backgroundColor: props.theme.colors.background,
-  color: props.theme.colors.text,
-}));
-
 const ThemedApp: FC = ({ children, ...props }) => {
   return (
     <ThemeHandler>
-      <StyledApp {...props} />
+      <App {...props} />
     </ThemeHandler>
   );
 };
