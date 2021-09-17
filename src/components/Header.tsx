@@ -1,8 +1,8 @@
-/** @jsxImportSource theme-ui */
+/** @jsx jsx */
 import React from 'react';
 import type { FC } from 'react';
 import type { BaseComponent } from '../typings';
-import { Text, IconButton } from 'theme-ui';
+import { jsx, Text, IconButton } from 'theme-ui';
 import StackedSidebar from './layouts/StackedSidebar';
 import useColourMode from '../hooks/useColourMode';
 import styled from '@emotion/styled';

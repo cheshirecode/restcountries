@@ -1,4 +1,3 @@
-/** @jsxImportSource theme-ui */
 import type { MouseEvent } from 'react';
 import { useCallback } from 'react';
 import { useColorMode, useThemeUI } from 'theme-ui';
