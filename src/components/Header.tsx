@@ -1,10 +1,10 @@
 /** @jsxImportSource theme-ui */
-import React, { useCallback } from 'react';
+import React from 'react';
 import type { FC } from 'react';
 import type { BaseComponent } from '../typings';
 import { Text, IconButton } from 'theme-ui';
 import StackedSidebar from './layouts/StackedSidebar';
-import { useColorMode, useThemeUI } from 'theme-ui';
+import useColourMode from '../hooks/useColourMode';
 import styled from '@emotion/styled';
 import { cx } from '@emotion/css';
 
@@ -38,17 +38,7 @@ const MoonIcon = styled(IconButton)`
 `;
 
 const Header: FC<BaseComponent> = ({ className }) => {
-  const [colourMode, setColourMode] = useColorMode();
-  const {
-    theme: { rawColors },
-  } = useThemeUI();
-  const colours = Object.keys(rawColors?.modes ?? {});
-  const nextColour = colours.find((c) => c !== colourMode);
-  const onClickChangeColourMode = useCallback(() => {
-    if (nextColour) {
-      setColourMode(nextColour);
-    }
-  }, [nextColour, setColourMode]);
+  const [colourMode, nextColour, onClickChangeColourMode] = useColourMode();
   return (
     <StackedSidebar className={cx(className)} Sidebar={<Text variant="heading">Where in the world?</Text>}>
       <>
