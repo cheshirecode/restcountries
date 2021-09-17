@@ -1,7 +1,6 @@
 /** @jsx jsx */
 import type { FC } from 'react';
-import { jsx } from '@emotion/react';
-import { ThemeProvider, Flex, Box } from 'theme-ui';
+import { jsx, ThemeProvider, Flex, Box } from 'theme-ui';
 import Header from './components/Header';
 import Main from './components/Main';
 import Footer from './components/Footer';

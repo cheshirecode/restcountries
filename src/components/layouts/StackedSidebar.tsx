@@ -6,8 +6,7 @@
  * --- side bar fixed width ---
  * --- flexible main          ---
  */
-import { jsx } from '@emotion/react';
-import { Flex, useThemeUI } from 'theme-ui';
+import { jsx, Flex, useThemeUI } from 'theme-ui';
 import type { FC } from 'react';
 import type { BaseComponent } from '../../typings';
 import { subtractFromTotal } from '../../utils';
@@ -17,7 +16,7 @@ export interface StackedSidebarProps extends BaseComponent {
   sidebarWidth?: string | number;
 }
 
-const widths = ['12.5em', '15em', '20em'];
+const widths = ['48', '64', 'xs'];
 
 const StackedSidebar: FC<StackedSidebarProps> = ({
   className,

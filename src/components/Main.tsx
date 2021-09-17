@@ -1,7 +1,6 @@
-/** @jsxImportSource theme-ui */
-import React from 'react';
+/** @jsx jsx */
 import type { FC } from 'react';
-import { Container, Alert, Spinner, Input, Select } from 'theme-ui';
+import { jsx, Container, Alert, Spinner, Input, Select, Flex } from 'theme-ui';
 import useFetch from '../hooks/useFetch';
 import consts from '../utils/const';
 import { cx } from '@emotion/css';
@@ -23,8 +22,35 @@ const CountriesList: FC<{ className?: string }> = ({ className }) => {
 const Main: FC<{ className?: string }> = ({ className }) => {
   return (
     <Container className={cx(className, 'main')}>
-      <Input />
-      <Select />
+      <Flex
+        sx={{
+          // flexDirection: 'column',
+          justifyContent: 'space-between',
+          flexWrap: 'wrap',
+          pt: 4,
+        }}
+      >
+        <Input
+          sx={{
+            width: ['full', 'xs'],
+            mb: [5, 4],
+          }}
+        />
+
+        <Select
+          sx={{
+            minWidth: 32,
+            width: ['full', '48'],
+            mb: 4,
+          }}
+          defaultValue="Hello"
+        >
+          <option>Hello</option>
+          <option>Hi</option>
+          <option>Beep</option>
+          <option>Boop</option>
+        </Select>
+      </Flex>
       <CountriesList />
     </Container>
   );
