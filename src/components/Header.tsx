@@ -58,6 +58,7 @@ const Header: FC<BaseComponent> = ({ className }) => {
             mr: '0.5em',
           }}
           onClick={onClickChangeColourMode}
+          aria-label="change colour"
         />
         <Text>{colourMode.charAt(0).toUpperCase() + colourMode.slice(1)} mode</Text>
       </>

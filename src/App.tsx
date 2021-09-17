@@ -21,6 +21,7 @@ const App: FC<BaseComponent> = ({ className }) => {
         backgroundColor: 'background',
         color: 'text',
       }}
+      data-testid="root"
     >
       <Box bg="muted" as="header" data-testid="header" variant="layout.header">
         <Header className="layout--header" />
