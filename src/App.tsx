@@ -14,35 +14,30 @@ const App: FC<BaseComponent> = ({ className }) => {
     <Flex
       // additional class name for escape hatch if external styling is required outside the code
       className={cx(className, 'layout')}
+      variant="layout.root"
       sx={{
-        // root-level font size for typographic scale
-        fontSize: [1, 2],
         height: '100vh',
         flexDirection: 'column',
         backgroundColor: 'background',
         color: 'text',
-        '> *': {
-          px: [3, 4],
-          py: [4, 2],
-        },
       }}
     >
-      <Box bg="muted" as="header" data-testid="header">
+      <Box bg="muted" as="header" data-testid="header" variant="layout.header">
         <Header className="layout--header" />
       </Box>
       <Box
-        py={0}
-        sx={{
-          border: 'thin', // TODO - remove after working version
-          borderColor: 'text', // currently --theme-ui-colors-text doesn't work yet
-          flex: '1 1 auto',
-        }}
         as="main"
+        data-testid="main"
+        variant="layout.mainDebug" // TODO - use layout.main after working version
+        sx={{
+          flex: '1 1 auto',
+          py: 0,
+        }}
       >
-        <Main data-testid="main" className="layout--main" />
+        <Main className="layout--main" />
       </Box>
-      <Box as="footer">
-        <Footer data-testid="footer" className="layout--main" />
+      <Box as="footer" variant="layout.footer">
+        <Footer data-testid="footer" className="layout--footer" />
       </Box>
     </Flex>
   );

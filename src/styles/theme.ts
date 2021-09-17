@@ -1,3 +1,7 @@
+const commonRootLayoutPaddings = {
+  px: [3, 4],
+  py: [4, 2],
+};
 const common = {
   fonts: {
     body: '"Nunito Sans", sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", sans-serif',
@@ -6,8 +10,8 @@ const common = {
   },
   // using typographic scale, set a root-level font size and specific length in CSS units (relative - em or absolute - rem)
   fontSizes: [12, 14, 16, 20, 24, 32, 48, 64, 72],
-  // default breakpoints in CSS units
-  breakpoints: ['40em', '56em', '64em'],
+  // default breakpoints in CSS units 375px 896px 1440px
+  breakpoints: ['23.4375em', '56em', '90em'],
   // base scale for use with layout-related CSS properties like margin, padding, etc
   space: [0, 4, 8, 16, 32, 64, 128, 256, 512],
   fontWeights: {
@@ -74,6 +78,25 @@ const common = {
     root: {
       fontFamily: 'body',
       fontWeight: 'body',
+    },
+  },
+  layout: {
+    root: {
+      // root-level font size for typographic scale
+      fontSize: [1, 2],
+    },
+    header: {
+      ...commonRootLayoutPaddings,
+    },
+    main: {
+      ...commonRootLayoutPaddings,
+    },
+    mainDebug: {
+      ...commonRootLayoutPaddings,
+      border: 'thin',
+    },
+    footer: {
+      ...commonRootLayoutPaddings,
     },
   },
 };
