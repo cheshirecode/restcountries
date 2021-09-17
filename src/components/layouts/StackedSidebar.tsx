@@ -1,13 +1,13 @@
 /** @jsx jsx */
 /**
- * stacked sidebar - flexible layout renders 2 child components side by side and let them stack if the container becomes narrow
+ * stacked sidebar - flexible layout renders aside + container side by side and let them stack if the container becomes narrow
  * --- side bar fixed width --- flexible main          ---
  * OR
  * --- side bar fixed width ---
  * --- flexible main          ---
  */
 import { jsx } from '@emotion/react';
-import { Flex } from 'theme-ui';
+import { Flex, useThemeUI } from 'theme-ui';
 import type { FC } from 'react';
 import type { BaseComponent } from '../../typings';
 import { subtractFromTotal } from '../../utils';
@@ -17,7 +17,7 @@ export interface StackedSidebarProps extends BaseComponent {
   sidebarWidth?: string | number;
 }
 
-const widths = ['15em', '20em'];
+const widths = ['12.5em', '15em', '20em'];
 
 const StackedSidebar: FC<StackedSidebarProps> = ({
   className,
@@ -26,6 +26,9 @@ const StackedSidebar: FC<StackedSidebarProps> = ({
   sidebarWidth = Sidebar === null ? '0em' : widths,
 }) => {
   const arr = Array.isArray(sidebarWidth) ? sidebarWidth : [sidebarWidth];
+  const {
+    theme: { breakpoints = [0] },
+  } = useThemeUI();
   const sectionMinWidth =
     Sidebar === null ? '100%' : subtractFromTotal(arr).map((w, i) => (i === 0 ? `max(${w}, ${widths[i]})` : w));
   return (
@@ -52,6 +55,10 @@ const StackedSidebar: FC<StackedSidebarProps> = ({
           minWidth: sectionMinWidth,
           alignItems: 'center',
           justifyContent: 'flex-end',
+          [`@media screen and (max-width: ${breakpoints[0]})`]: {
+            justifyContent: 'flex-start',
+            pt: 2,
+          },
         }}
         as="section"
       >
