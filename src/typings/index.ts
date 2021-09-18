@@ -6,6 +6,11 @@ export interface BaseComponent {
   className?: string;
   ['data-testid']?: string;
 }
+// doesn't need typings yet for generics to be passed in, would be overkill to require for now
+export interface ComponentWithAPIResponseProps extends BaseComponent {
+  error: FetchResponse<unknown, ErrorHttp>[1];
+  data: unknown;
+}
 
 export interface ErrorHttp extends Error {
   response?: unknown;
