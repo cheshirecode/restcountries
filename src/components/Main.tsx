@@ -4,8 +4,9 @@ import { jsx, Container, Input, Select, Flex } from 'theme-ui';
 import CountryList from './CountryList';
 import { cx } from '@emotion/css';
 import styled from '@emotion/styled';
+import type { BaseComponent } from '../typings';
 
-const Main: FC<{ className?: string }> = ({ className }) => {
+const Main: FC<BaseComponent> = ({ className }) => {
   return (
     <Container className={cx(className, 'main')}>
       <Flex
