@@ -1,19 +1,16 @@
 /** @jsx jsx */
 import type { FC } from 'react';
-import { jsx, Alert, Spinner } from 'theme-ui';
+import { jsx, Spinner } from 'theme-ui';
 import useCountryListFetch from '../hooks/useCountryListFetch';
+import ApiResponseHandler from './ApiResponseHandler';
 
 const CountryList: FC<{ className?: string }> = ({ className }) => {
   const [data, error] = useCountryListFetch();
-  if (error) {
-    // eslint-disable-next-line no-console
-    console.error(error);
-    return <Alert role="alert">API error</Alert>;
-  }
-  if (!data) return <Spinner />;
-  // eslint-disable-next-line no-console
-  console.log('data', data);
-  return <Spinner className={className} />;
+  return (
+    <ApiResponseHandler data={data} error={error} data-testid="country-list">
+      <Spinner className={className} />
+    </ApiResponseHandler>
+  );
 };
 
 export default CountryList;
