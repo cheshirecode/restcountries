@@ -1,10 +1,14 @@
 /** @jsx jsx */
 import useFetch from '../hooks/useFetch';
-import consts from '../utils/const';
-import type { Country, ErrorHttp } from '../typings';
+import endpoints from '../utils/endpoints';
+import type { Country, ErrorHttp, FetchResponse } from '../typings';
 
-const useCountryListFetch: () => [Country[] | undefined, Promise<ErrorHttp> | undefined] = () => {
-  const { data, error } = useFetch<Country[]>(consts.API_ENDPOINTS.GET_ALL_COUNTRIES);
+export interface CountryListFetchParams {
+  fields?: string[];
+}
+
+const useCountryListFetch: (params?: CountryListFetchParams) => FetchResponse<Country[], ErrorHttp> = (params = {}) => {
+  const { data, error } = useFetch<Country[]>(endpoints.getAllCountries(params?.fields));
 
   return [data, error];
 };
