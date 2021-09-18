@@ -1,13 +1,12 @@
 /** @jsx jsx */
 import type { FC } from 'react';
 import { jsx, Container, Alert, Spinner, Input, Select, Flex } from 'theme-ui';
-import useFetch from '../hooks/useFetch';
-import consts from '../utils/const';
+import useCountryListFetch from '../hooks/useCountryListFetch';
 import { cx } from '@emotion/css';
 import styled from '@emotion/styled';
 
 const CountriesList: FC<{ className?: string }> = ({ className }) => {
-  const { data, error } = useFetch(consts.API_ENDPOINTS.GET_ALL_COUNTRIES);
+  const [data, error] = useCountryListFetch();
   if (error) {
     // eslint-disable-next-line no-console
     console.error(error);
@@ -15,7 +14,7 @@ const CountriesList: FC<{ className?: string }> = ({ className }) => {
   }
   if (!data) return <Spinner />;
   // eslint-disable-next-line no-console
-  console.log(data);
+  console.log('data', data);
   return <Spinner />;
 };
 
