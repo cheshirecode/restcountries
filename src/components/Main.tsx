@@ -1,22 +1,9 @@
 /** @jsx jsx */
 import type { FC } from 'react';
-import { jsx, Container, Alert, Spinner, Input, Select, Flex } from 'theme-ui';
-import useCountryListFetch from '../hooks/useCountryListFetch';
+import { jsx, Container, Input, Select, Flex } from 'theme-ui';
+import CountryList from './CountryList';
 import { cx } from '@emotion/css';
 import styled from '@emotion/styled';
-
-const CountriesList: FC<{ className?: string }> = ({ className }) => {
-  const [data, error] = useCountryListFetch();
-  if (error) {
-    // eslint-disable-next-line no-console
-    console.error(error);
-    return <Alert role="alert">API error</Alert>;
-  }
-  if (!data) return <Spinner />;
-  // eslint-disable-next-line no-console
-  console.log('data', data);
-  return <Spinner />;
-};
 
 const Main: FC<{ className?: string }> = ({ className }) => {
   return (
@@ -50,7 +37,7 @@ const Main: FC<{ className?: string }> = ({ className }) => {
           <option>Boop</option>
         </Select>
       </Flex>
-      <CountriesList />
+      <CountryList />
     </Container>
   );
 };
