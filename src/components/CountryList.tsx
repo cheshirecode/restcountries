@@ -4,7 +4,7 @@ import { jsx, Spinner } from 'theme-ui';
 import useCountryListFetch from '../hooks/useCountryListFetch';
 import ApiResponseHandler from './ApiResponseHandler';
 
-const CountryList: FC<{ className?: string }> = ({ className }) => {
+const CountryList: FC<{ className?: string; region?: string }> = ({ className, region }) => {
   const [data, error] = useCountryListFetch();
   return (
     <ApiResponseHandler data={data} error={error} data-testid="country-list">

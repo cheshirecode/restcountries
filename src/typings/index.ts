@@ -1,8 +1,8 @@
-import type { Theme } from 'theme-ui';
+// import type { Theme } from 'theme-ui';
 
 export * from './country';
 export interface BaseComponent {
-  theme?: Theme;
+  // theme?: Theme;
   className?: string;
   ['data-testid']?: string;
 }

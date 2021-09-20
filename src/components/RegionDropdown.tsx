@@ -7,7 +7,15 @@ import type { CSSObject } from '@emotion/serialize';
 import useCountryListFetch from '../hooks/useCountryListFetch';
 import ApiResponseHandler from './ApiResponseHandler';
 
-const RegionDropdown: FC<{ className?: string }> = ({ className }) => {
+// eslint-disable-next-line @typescript-eslint/no-empty-function
+const noop = () => {};
+export interface RegionDropdownProps {
+  className?: string;
+  region?: string;
+  onRegionChange?: (region: string) => void;
+}
+
+const RegionDropdown: FC<RegionDropdownProps> = ({ className, region, onRegionChange = noop }) => {
   const [data, error] = useCountryListFetch({
     fields: ['region'],
   });
@@ -20,7 +28,6 @@ const RegionDropdown: FC<{ className?: string }> = ({ className }) => {
     label: x,
   }));
   const classNamePrefix = 'react-select';
-
   return (
     <ApiResponseHandler data={data} error={error} data-testid="country-list">
       {
@@ -28,27 +35,43 @@ const RegionDropdown: FC<{ className?: string }> = ({ className }) => {
         options.length ? (
           <Select
             className={className}
-            defaultValue={options[0]}
-            options={options}
             // escape hatch to apply style to children from outside through classNames with set prefixes https://react-select.com/styles#using-classnames
             classNamePrefix={classNamePrefix}
+            placeholder="Filter by region"
+            options={options}
             sx={{
               [`.${classNamePrefix}__indicator-separator`]: {
                 visibility: 'hidden',
               },
               [`.${classNamePrefix}__control`]: {
                 color: 'text',
+                backgroundColor: 'muted',
+                border: 'none',
               },
               [`.${classNamePrefix}__menu`]: {
-                color: 'background',
+                color: 'text',
+                backgroundColor: 'muted',
+                mt: 0,
               },
             }}
             // due to CSS specificity, the inner option styling needs to be reset
             styles={{
-              option: (base: CSSObject) => ({
+              singleValue: (base: CSSObject) => ({
                 ...base,
                 color: 'inherit',
+                backgroundColor: 'inherit',
               }),
+              option: (base: CSSObject, state) => ({
+                ...base,
+                ...(state.isFocused || state.isSelected
+                  ? { color: 'background' }
+                  : { backgroundColor: 'inherit', color: 'inherit' }),
+              }),
+            }}
+            onChange={(option, action) => {
+              if (action?.action === 'select-option') {
+                onRegionChange(option?.id ?? '');
+              }
             }}
           />
         ) : (
