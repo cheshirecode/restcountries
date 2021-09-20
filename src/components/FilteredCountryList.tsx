@@ -9,8 +9,8 @@ const FilteredCountryList: FC<{ className?: string; region: string }> = ({ class
     region,
   });
   return (
-    <ApiResponseHandler data={data} error={error} data-testid="filtered-country-list">
-      <Spinner className={className} />
+    <ApiResponseHandler data={data} error={error}>
+      <Spinner className={className} data-testid="filtered-country-list" />
     </ApiResponseHandler>
   );
 };

@@ -29,7 +29,7 @@ const RegionDropdown: FC<RegionDropdownProps> = ({ className, region, onRegionCh
   }));
   const classNamePrefix = 'react-select';
   return (
-    <ApiResponseHandler data={data} error={error} data-testid="region-dropdown">
+    <ApiResponseHandler data={data} error={error}>
       {
         // show nothing if the list is empty
         options.length ? (
@@ -73,6 +73,7 @@ const RegionDropdown: FC<RegionDropdownProps> = ({ className, region, onRegionCh
                 onRegionChange(option?.id ?? '');
               }
             }}
+            data-testid="region-dropdown"
           />
         ) : (
           <Alert role="alert">No regions</Alert>
