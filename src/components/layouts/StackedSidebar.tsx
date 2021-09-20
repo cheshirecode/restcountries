@@ -36,6 +36,7 @@ const StackedSidebar: FC<StackedSidebarProps> = ({
       sx={{
         flexWrap: 'wrap',
       }}
+      data-testid="stackedsidebar"
     >
       <Flex
         sx={{
