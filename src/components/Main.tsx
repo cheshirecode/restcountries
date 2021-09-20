@@ -1,7 +1,8 @@
 /** @jsx jsx */
 import type { FC } from 'react';
-import { jsx, Container, Input, Select, Flex } from 'theme-ui';
+import { jsx, Container, Input, Flex } from 'theme-ui';
 import CountryList from './CountryList';
+import RegionList from './RegionDropdown';
 import { cx } from '@emotion/css';
 import styled from '@emotion/styled';
 import type { BaseComponent } from '../typings';
@@ -24,19 +25,13 @@ const Main: FC<BaseComponent> = ({ className }) => {
           }}
         />
 
-        <Select
+        <RegionList
           sx={{
             minWidth: 32,
             width: ['full', '48'],
             mb: 4,
           }}
-          defaultValue="Hello"
-        >
-          <option>Hello</option>
-          <option>Hi</option>
-          <option>Beep</option>
-          <option>Boop</option>
-        </Select>
+        />
       </Flex>
       <CountryList />
     </Container>
