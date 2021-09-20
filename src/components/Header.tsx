@@ -21,7 +21,13 @@ const Header: FC<BaseComponent> = ({ className }) => {
           onClick={onClickChangeColourMode}
           aria-label="change colour"
         />
-        <Text>{colourMode.charAt(0).toUpperCase() + colourMode.slice(1)} mode</Text>
+        <Text
+          sx={{
+            minWidth: '10ch', //small hack to avoid the component shrinking once text change (light mode = 10 chars)
+          }}
+        >
+          {colourMode.charAt(0).toUpperCase() + colourMode.slice(1)} mode
+        </Text>
       </>
     </StackedSidebar>
   );
