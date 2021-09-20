@@ -16,7 +16,6 @@ const Header: FC<BaseComponent> = ({ className }) => {
         <MoonIcon
           sx={{
             ...(nextColour ? { cursor: 'pointer' } : {}),
-            mr: '0.5em',
           }}
           onClick={onClickChangeColourMode}
           aria-label="change colour"
@@ -24,6 +23,7 @@ const Header: FC<BaseComponent> = ({ className }) => {
         <Text
           sx={{
             minWidth: '10ch', //small hack to avoid the component shrinking once text change (light mode = 10 chars)
+            textAlign: 'end',
           }}
         >
           {colourMode.charAt(0).toUpperCase() + colourMode.slice(1)} mode
