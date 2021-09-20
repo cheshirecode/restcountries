@@ -16,17 +16,18 @@ const Main: FC<BaseComponent> = ({ className }) => {
           justifyContent: 'space-between',
           flexWrap: 'wrap',
           pt: 4,
+          mb: [5, 4],
         }}
       >
         <Input
           sx={{
             width: ['full', 'xs'],
-            mb: [5, 4],
           }}
         />
 
         <RegionList
           sx={{
+            // override base values by writing the CSS later (order of apperance)
             minWidth: 32,
             width: ['full', '48'],
           }}
