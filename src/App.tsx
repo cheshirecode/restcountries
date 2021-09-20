@@ -1,6 +1,7 @@
 /** @jsx jsx */
 import type { FC } from 'react';
 import { jsx, ThemeProvider, Flex, Box } from 'theme-ui';
+import ErrorBoundary from './components/ErrorBoundary';
 import Header from './components/Header';
 import Main from './components/Main';
 import Footer from './components/Footer';
@@ -24,7 +25,9 @@ const App: FC<BaseComponent> = ({ className }) => {
         data-testid="root"
       >
         <Box bg="muted" as="header" data-testid="header" variant="layout.header">
-          <Header className="layout--header" />
+          <ErrorBoundary>
+            <Header className="layout--header" />
+          </ErrorBoundary>
         </Box>
         <Box
           as="main"
@@ -35,10 +38,14 @@ const App: FC<BaseComponent> = ({ className }) => {
             py: 0,
           }}
         >
-          <Main className="layout--main" />
+          <ErrorBoundary>
+            <Main className="layout--main" />
+          </ErrorBoundary>
         </Box>
         <Box as="footer" variant="layout.footer">
-          <Footer data-testid="footer" className="layout--footer" />
+          <ErrorBoundary>
+            <Footer data-testid="footer" className="layout--footer" />
+          </ErrorBoundary>
         </Box>
       </Flex>
     </ThemeProvider>

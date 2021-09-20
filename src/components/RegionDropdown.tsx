@@ -29,7 +29,7 @@ const RegionDropdown: FC<RegionDropdownProps> = ({ className, region, onRegionCh
   }));
   const classNamePrefix = 'react-select';
   return (
-    <ApiResponseHandler data={data} error={error} data-testid="country-list">
+    <ApiResponseHandler data={data} error={error} data-testid="region-dropdown">
       {
         // show nothing if the list is empty
         options.length ? (

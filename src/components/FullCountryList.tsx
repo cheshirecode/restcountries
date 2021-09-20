@@ -4,13 +4,13 @@ import { jsx, Spinner } from 'theme-ui';
 import useCountryListFetch from '../hooks/useCountryListFetch';
 import ApiResponseHandler from './ApiResponseHandler';
 
-const CountryList: FC<{ className?: string; region?: string }> = ({ className, region }) => {
+const FullCountryList: FC<{ className?: string }> = ({ className }) => {
   const [data, error] = useCountryListFetch();
   return (
-    <ApiResponseHandler data={data} error={error} data-testid="country-list">
+    <ApiResponseHandler data={data} error={error} data-testid="full-country-list">
       <Spinner className={className} />
     </ApiResponseHandler>
   );
 };
 
-export default CountryList;
+export default FullCountryList;
