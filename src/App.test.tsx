@@ -47,18 +47,11 @@ describe('<App>', () => {
     });
   });
 
-  it('dropdown with regions', async () => {
-    const { getByText } = render(<App />);
-    await waitFor(() => {
-      const regionDropdownElement = getByText('Filter by region', { exact: false });
-      expect(document.body.contains(regionDropdownElement));
-    });
-  });
-
-  it('fetches filtered list of countries', async () => {
+  it('dropdown with regions, then selecting a region fetches filtered list of countries', async () => {
     const { getByText, getByTestId } = render(<App />);
     await waitFor(() => {
       const dropdownElement = getByText('Filter by region', { exact: false });
+      expect(document.body.contains(dropdownElement));
       fireEvent.mouseDown(dropdownElement);
       const dropdownOptionElement = getByText('Asia');
       fireEvent.click(dropdownOptionElement);
