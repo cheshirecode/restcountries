@@ -29,7 +29,6 @@ const Main: FC<BaseComponent> = ({ className }) => {
           sx={{
             minWidth: 32,
             width: ['full', '48'],
-            mb: 4,
           }}
         />
       </Flex>

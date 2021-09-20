@@ -1,7 +1,7 @@
 /** @jsx jsx */
 import { useMemo } from 'react';
 import type { FC } from 'react';
-import { jsx, Select } from 'theme-ui';
+import { jsx, Select, Alert } from 'theme-ui';
 import useCountryListFetch from '../hooks/useCountryListFetch';
 import ApiResponseHandler from './ApiResponseHandler';
 
@@ -18,11 +18,18 @@ const RegionDropdown: FC<{ className?: string }> = ({ className }) => {
   }));
   return (
     <ApiResponseHandler data={data} error={error} data-testid="country-list">
-      <Select defaultValue={regionOptions[0].displayName} className={className}>
-        {regionOptions.map(({ id, displayName }) => (
-          <option key={id}>{displayName}</option>
-        ))}
-      </Select>
+      {
+        // show nothing if the list is empty
+        regionOptions.length ? (
+          <Select defaultValue={regionOptions[0]?.displayName} className={className}>
+            {regionOptions.map(({ id, displayName }) => (
+              <option key={id}>{displayName}</option>
+            ))}
+          </Select>
+        ) : (
+          <Alert role="alert">No regions</Alert>
+        )
+      }
     </ApiResponseHandler>
   );
 };
