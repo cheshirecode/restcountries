@@ -2,7 +2,8 @@
 import type { FC } from 'react';
 import { useState } from 'react';
 import { jsx, Container, Input, Flex } from 'theme-ui';
-import CountryList from './CountryList';
+import FilteredCountryList from './FilteredCountryList';
+import FullCountryList from './FullCountryList';
 import RegionDropdown from './RegionDropdown';
 import { cx } from '@emotion/css';
 import styled from '@emotion/styled';
@@ -37,7 +38,7 @@ const Main: FC<BaseComponent> = ({ className }) => {
           onRegionChange={setRegion}
         />
       </Flex>
-      <CountryList region={region} />
+      {region ? <FilteredCountryList region={region} /> : <FullCountryList />}
     </Container>
   );
 };
