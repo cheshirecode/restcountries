@@ -1,3 +1,4 @@
+[![test all branches except master](https://github.com/cheshirecode/restcountries/actions/workflows/base.yml/badge.svg)](https://github.com/cheshirecode/restcountries/actions/workflows/base.yml)
 # Countries page
 
 ## Background
@@ -12,6 +13,12 @@ Reusable design system styles tokens like styling values (colours, fonts etc) an
 
 ### API models and handling
 I come up with Models as extendable Typescript interfaces as I go along the tasks, again with small building blocks and add more on top. To handle API calls, I use polyfilled native [fetch](https://github.com/developit/unfetch) with a small [wrapper](https://swr.vercel.app/) for caching and re-validation.
+
+### Tests
+I use the following
+- [Headless browser wrapper](https://modern-web.dev/docs/test-runner/overview/) 
+- [React Testing library](https://testing-library.com/docs/react-testing-library/intro)
+to write tests as close to how the live site is accessed.
 
 > ✨ Bootstrapped with Create Snowpack App (CSA).
 ## Available Scripts
