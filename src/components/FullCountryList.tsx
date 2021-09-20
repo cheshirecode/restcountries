@@ -7,8 +7,8 @@ import ApiResponseHandler from './ApiResponseHandler';
 const FullCountryList: FC<{ className?: string }> = ({ className }) => {
   const [data, error] = useCountryListFetch();
   return (
-    <ApiResponseHandler data={data} error={error} data-testid="full-country-list">
-      <Spinner className={className} />
+    <ApiResponseHandler data={data} error={error}>
+      <Spinner className={className} data-testid="full-country-list" />
     </ApiResponseHandler>
   );
 };

@@ -2,7 +2,8 @@
 import { Component } from 'react';
 import type { ErrorInfo, ReactNode } from 'react';
 import { jsx, Alert } from 'theme-ui';
-
+// nearly impossible to reliably test unless throwing errors explicitly inside component tree
+/* c8 ignore next 50 */
 export default class ErrorBoundary extends Component<Record<string, unknown>, { error: Error; errorInfo: ErrorInfo }> {
   constructor(props: Record<string, unknown>) {
     super(props);
