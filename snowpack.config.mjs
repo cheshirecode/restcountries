@@ -33,6 +33,7 @@ export default {
     /* ... */
   },
   buildOptions: {
-    /* ... */
+    // https://github.com/snowpackjs/snowpack/issues/2849
+    sourcemap: true,
   },
 };
