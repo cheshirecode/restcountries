@@ -137,7 +137,7 @@ const common = {
         text: '#fff',
         background: '#222D37',
         primary: '#3cf',
-        secondary: '#e0f',
+        secondary: '#D6DCE1',
         highlight: '#29112c',
         muted: '#2C3743',
       },

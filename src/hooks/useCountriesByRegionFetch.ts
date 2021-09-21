@@ -12,7 +12,9 @@ const useCountriesByRegionFetch: (params: CountriesByRegionFetchParams) => Fetch
   params,
 ) => {
   const { data, error } = useFetch<Country[]>(
-    endpoints.getCountriesByRegion(params.region, params?.fields ?? consts.COMMON_COUNTRY_FIELDS),
+    params?.region
+      ? endpoints.getCountriesByRegion(params.region, params?.fields ?? consts.COMMON_COUNTRY_FIELDS)
+      : null,
   );
 
   return [data, error];
