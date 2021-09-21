@@ -1,16 +1,32 @@
 /** @jsx jsx */
-import type { FC } from 'react';
-import { useState } from 'react';
-import { jsx, Container, Box, Flex } from 'theme-ui';
+import type { FC, ChangeEvent } from 'react';
+import { useState, useMemo } from 'react';
+import { jsx, Container, Flex } from 'theme-ui';
 import FilteredCountryList from './FilteredCountryList';
 import FullCountryList from './FullCountryList';
 import RegionDropdown from './RegionDropdown';
 import { cx } from '@emotion/css';
 import styled from '@emotion/styled';
 import type { BaseComponent } from '../typings';
+import { throttle } from 'lodash-es';
 
 const Main: FC<BaseComponent> = ({ className }) => {
   const [region, setRegion] = useState<string>('');
+  const [countryName, setCountrySearchStr] = useState<string>('');
+  const throttledOnChange = useMemo(
+    () =>
+      throttle(
+        (e: ChangeEvent<HTMLInputElement>) => {
+          setCountrySearchStr(e.target.value);
+        },
+        300,
+        {
+          leading: true,
+          trailing: true,
+        },
+      ),
+    [setCountrySearchStr],
+  );
   return (
     <Container className={cx(className, 'main')}>
       <Flex
@@ -29,7 +45,7 @@ const Main: FC<BaseComponent> = ({ className }) => {
               fontSize: '1.5em',
               position: 'absolute',
               ml: 3,
-              color: 'muted',
+              color: 'text',
             }}
           >
             &#9906;
@@ -39,8 +55,14 @@ const Main: FC<BaseComponent> = ({ className }) => {
               width: ['full', 'auto'],
               pl: '3rem',
               height: '2.5rem',
+              color: 'text',
+              backgroundColor: 'muted',
+              border: 'none',
+              'box-shadow': 'none',
+              '-webkit-appearance': 'none',
             }}
             placeholder="Search for a country..."
+            onChange={throttledOnChange}
           />
         </Flex>
 
@@ -56,7 +78,7 @@ const Main: FC<BaseComponent> = ({ className }) => {
           onRegionChange={setRegion}
         />
       </Flex>
-      {region ? <FilteredCountryList region={region} /> : <FullCountryList />}
+      {countryName || region ? <FilteredCountryList region={region} countryName={countryName} /> : <FullCountryList />}
     </Container>
   );
 };

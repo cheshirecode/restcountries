@@ -19,6 +19,6 @@ export const fetcher = (url: string) =>
     .then((response) => response.json());
 
 // eslint-disable-next-line @typescript-eslint/explicit-module-boundary-types
-const useFetch = <T>(url: string) => useSWR<T, Promise<ErrorHttp>>(url, fetcher);
+const useFetch = <T>(url: string | null) => useSWR<T, Promise<ErrorHttp>>(url, fetcher);
 
 export default useFetch;
