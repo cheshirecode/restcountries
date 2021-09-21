@@ -1,13 +1,22 @@
 /** @jsx jsx */
 import type { FC } from 'react';
-import { jsx, ThemeProvider, Flex, Box } from 'theme-ui';
+import { jsx, ThemeProvider, Flex, Box, Spinner, Alert } from 'theme-ui';
 import ErrorBoundary from './components/ErrorBoundary';
 import Header from './components/Header';
-import Main from './components/Main';
+// import Main from './components/Main';
 import Footer from './components/Footer';
+import { Route, Switch } from 'wouter';
+import { Suspense, lazy } from 'react';
 import type { BaseComponent } from './typings';
 import { cx } from '@emotion/css';
 import theme from './styles/theme';
+
+const Main = lazy(() => import('./components/Main'));
+const MainRoute = () => (
+  <Suspense fallback={<Spinner />}>
+    <Main className="layout--main" />
+  </Suspense>
+);
 
 const App: FC<BaseComponent> = ({ className }) => {
   return (
@@ -39,7 +48,12 @@ const App: FC<BaseComponent> = ({ className }) => {
           }}
         >
           <ErrorBoundary>
-            <Main className="layout--main" />
+            <Switch>
+              <Route path="/" component={MainRoute}></Route>
+              <Route>
+                <Alert role="alert">404</Alert>
+              </Route>
+            </Switch>
           </ErrorBoundary>
         </Box>
         <Box as="footer" variant="layout.footer">

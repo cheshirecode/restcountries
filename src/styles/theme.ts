@@ -175,6 +175,16 @@ const common = {
       listStyleType: 'none',
     },
   },
+  alerts: {
+    primary: {
+      color: 'background',
+      bg: 'primary',
+    },
+    muted: {
+      color: 'text',
+      bg: 'muted',
+    },
+  },
 };
 
 export default common;
