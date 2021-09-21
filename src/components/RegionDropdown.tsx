@@ -69,10 +69,11 @@ const RegionDropdown: FC<RegionDropdownProps> = ({ className, region, onRegionCh
               }),
             }}
             onChange={(option, action) => {
-              if (action?.action === 'select-option') {
+              if (action?.action === 'select-option' || action?.action === 'clear') {
                 onRegionChange(option?.id ?? '');
               }
             }}
+            isClearable
             data-testid="region-dropdown"
           />
         ) : (
