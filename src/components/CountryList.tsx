@@ -1,6 +1,6 @@
 /** @jsx jsx */
 import type { FC } from 'react';
-import { jsx, Grid, Card, AspectImage, Box, Heading, Text, Alert } from 'theme-ui';
+import { jsx, Grid, Card, AspectImage, Box, Heading, Text, Message } from 'theme-ui';
 import type { BaseComponent, Country } from '../typings';
 
 const CountryList: FC<BaseComponent & { data: Country[] | undefined }> = ({ data, ...props }) => {
@@ -30,7 +30,7 @@ const CountryList: FC<BaseComponent & { data: Country[] | undefined }> = ({ data
           </Card>
         ))
       ) : (
-        <Alert>No countries found...</Alert>
+        <Message>No countries found...</Message>
       )}
     </Grid>
   );

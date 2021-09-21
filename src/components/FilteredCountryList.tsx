@@ -5,7 +5,6 @@ import CountryList from './CountryList';
 import useCountriesByRegionFetch from '../hooks/useCountriesByRegionFetch';
 import useCountriesByNameFetch from '../hooks/useCountriesByNameFetch';
 import ApiResponseHandler from './ApiResponseHandler';
-import { intersectionBy } from 'lodash-es';
 
 const FilteredCountryList: FC<{ className?: string; region: string; countryName: string }> = ({
   region,
@@ -20,9 +19,9 @@ const FilteredCountryList: FC<{ className?: string; region: string; countryName:
   });
 
   if (Array.isArray(data)) {
-    // find the common countries of the 2 groups if both are lists
-    if (Array.isArray(byNameData)) {
-      data = intersectionBy(data, byNameData, (a) => a.name);
+    // find the common countries of the 2 groups
+    if (name) {
+      data = data.filter((country) => country.name.toLowerCase().includes(name));
     }
   } else {
     data = byNameData;
