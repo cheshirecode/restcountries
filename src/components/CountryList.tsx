@@ -7,7 +7,7 @@ const CountryList: FC<BaseComponent & { data: Country[] | undefined }> = ({ data
   return (
     <Grid gap={4} width={['100%', '15rem']} data-testid={props['data-testid'] ?? 'country-list'} as="ul">
       {data && data.length
-        ? data.map(({ flag, name, nativeName, population, region, subregion, capital }) => (
+        ? data.map(({ flag, name, population, region, capital }) => (
             <Card as="li" key={name}>
               <AspectImage ratio={3 / 2} src={flag} />
               <Box px={4} py={4}>
