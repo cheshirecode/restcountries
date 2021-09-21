@@ -1,14 +1,17 @@
 /** @jsx jsx */
 import type { FC } from 'react';
-import { jsx, Spinner } from 'theme-ui';
+import { jsx } from 'theme-ui';
+import CountryList from './CountryList';
 import useCountryListFetch from '../hooks/useCountryListFetch';
 import ApiResponseHandler from './ApiResponseHandler';
 
 const FullCountryList: FC<{ className?: string }> = ({ className }) => {
-  const [data, error] = useCountryListFetch();
+  const [data, error] = useCountryListFetch({
+    fields: ['flag', 'name', 'nativeName', 'population', 'region', 'subregion', 'capital'],
+  });
   return (
     <ApiResponseHandler data={data} error={error}>
-      <Spinner className={className} data-testid="full-country-list" />
+      <CountryList data={data} data-testid="full-country-list" />
     </ApiResponseHandler>
   );
 };
