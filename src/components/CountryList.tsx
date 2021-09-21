@@ -5,11 +5,11 @@ import type { BaseComponent, Country } from '../typings';
 
 const CountryList: FC<BaseComponent & { data: Country[] | undefined }> = ({ data, ...props }) => {
   return (
-    <Grid gap={4} width={['100%', '15rem']} data-testid={props['data-testid'] ?? 'country-list'} as="ul">
+    <Grid gap={4} width={['100%', '15rem']} data-testid={props['data-testid'] ?? 'country-list'} as="ul" pl={0}>
       {data && data.length
         ? data.map(({ flag, name, population, region, capital }) => (
             <Card as="li" key={name}>
-              <AspectImage ratio={3 / 2} src={flag} />
+              <AspectImage className="list-country--image" ratio={3 / 2} src={flag} />
               <Box px={4} py={4}>
                 <Heading as="h3" mb={4}>
                   {name}

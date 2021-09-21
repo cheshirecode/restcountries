@@ -1,7 +1,7 @@
 /** @jsx jsx */
 import type { FC } from 'react';
 import { useState } from 'react';
-import { jsx, Container, Input, Flex } from 'theme-ui';
+import { jsx, Container, Box, Flex } from 'theme-ui';
 import FilteredCountryList from './FilteredCountryList';
 import FullCountryList from './FullCountryList';
 import RegionDropdown from './RegionDropdown';
@@ -22,17 +22,35 @@ const Main: FC<BaseComponent> = ({ className }) => {
           mb: [5, 4],
         }}
       >
-        <Input
-          sx={{
-            width: ['full', 'xs'],
-          }}
-        />
+        <Flex>
+          <i
+            sx={{
+              transform: 'rotate(-45deg)',
+              fontSize: '1.5em',
+              position: 'absolute',
+              ml: 3,
+              color: 'muted',
+            }}
+          >
+            &#9906;
+          </i>
+          <input
+            sx={{
+              width: ['full', 'auto'],
+              pl: '3rem',
+              height: '2.5rem',
+            }}
+            placeholder="Search for a country..."
+          />
+        </Flex>
 
         <RegionDropdown
           sx={{
             // override base values by writing the CSS later (order of apperance)
             minWidth: 32,
             width: ['full', '48'],
+            mt: [5, 0, 0],
+            height: '2.5rem',
           }}
           region={region}
           onRegionChange={setRegion}
