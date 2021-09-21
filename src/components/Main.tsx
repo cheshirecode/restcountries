@@ -58,8 +58,8 @@ const Main: FC<BaseComponent> = ({ className }) => {
               color: 'text',
               backgroundColor: 'muted',
               border: 'none',
-              'box-shadow': 'none',
-              '-webkit-appearance': 'none',
+              boxShadow: 'none',
+              WebkitAppearance: 'none',
             }}
             placeholder="Search for a country..."
             onChange={throttledOnChange}
