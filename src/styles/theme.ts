@@ -101,10 +101,18 @@ const common = {
       color: 'text',
       fontSize: [1, 2],
     },
-    // caps: {
-    //   textTransform: 'uppercase',
-    //   letterSpacing: '0.2em',
-    // },
+    name: {
+      fontWeight: 'heading',
+      '::after': {
+        content: '":"',
+      },
+      mr: 1,
+    },
+    value: {
+      mb: 1,
+      width: '100%',
+      display: 'block',
+    },
   },
   // define convenient border style based on theme's text colour or fall back to black
   borders: {
@@ -158,6 +166,13 @@ const common = {
     },
     footer: {
       ...commonRootLayoutPaddings,
+    },
+  },
+  cards: {
+    primary: {
+      maxWidth: [null, '22rem'],
+      backgroundColor: 'muted',
+      listStyleType: 'none',
     },
   },
 };

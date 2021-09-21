@@ -1,6 +1,7 @@
 /** @jsx jsx */
 import type { FC } from 'react';
-import { jsx, Spinner } from 'theme-ui';
+import { jsx } from 'theme-ui';
+import CountryList from './CountryList';
 import useCountriesByRegionFetch from '../hooks/useCountriesByRegionFetch';
 import ApiResponseHandler from './ApiResponseHandler';
 
@@ -10,7 +11,7 @@ const FilteredCountryList: FC<{ className?: string; region: string }> = ({ class
   });
   return (
     <ApiResponseHandler data={data} error={error}>
-      <Spinner className={className} data-testid="filtered-country-list" />
+      <CountryList data={data} data-testid="filtered-country-list" />
     </ApiResponseHandler>
   );
 };

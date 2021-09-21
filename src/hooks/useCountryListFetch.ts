@@ -9,7 +9,7 @@ export interface CountryListFetchParams {
 
 const useCountryListFetch: (params?: CountryListFetchParams) => FetchResponse<Country[], ErrorHttp> = (params = {}) => {
   const { data, error } = useFetch<Country[]>(endpoints.getAllCountries(params?.fields));
-
+  data?.sort((a, b) => a.name?.localeCompare(b.name));
   return [data, error];
 };
 
