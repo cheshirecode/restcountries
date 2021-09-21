@@ -29,7 +29,7 @@ describe('getURI()', () => {
   it('should return a valid URL', () => {
     expect(getURI('https://foo.com')).to.be.eq('https://foo.com/');
     expect(getURI('https://foo.com/test', ['x', 'y'])).to.be.eq(
-      `https://foo.com/test?fields=${encodeURIComponent('x,y')}`,
+      `https://foo.com/test?fields=${encodeURIComponent('x;y')}`,
     );
     expect(getURI('foo.com/?bar=1', [], 'http://')).to.be.eq('http://foo.com/?bar=1');
     expect(getURI('/test')).to.be.eq('https://restcountries.eu/test');
