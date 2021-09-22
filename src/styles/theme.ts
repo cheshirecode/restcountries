@@ -159,13 +159,17 @@ const common = {
     },
     main: {
       ...commonRootLayoutPaddings,
+      flex: '1 1 auto',
     },
     mainDebug: {
       ...commonRootLayoutPaddings,
+      flex: '1 1 auto',
       border: 'thin',
     },
     footer: {
-      ...commonRootLayoutPaddings,
+      // flex: '0 1 auto',
+      p: 0,
+      m: 0,
     },
   },
   cards: {

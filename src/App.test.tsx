@@ -14,11 +14,11 @@ describe('<App>', () => {
     const mainElement = getByRole('main');
     expect(document.body.contains(mainElement));
   });
-  it('has Footer', () => {
-    const { getByTestId } = render(<App />);
-    const footerElement = getByTestId('footer');
-    expect(document.body.contains(footerElement));
-  });
+  // it('has Footer', () => {
+  //   const { getByTestId } = render(<App />);
+  //   const footerElement = getByTestId('footer');
+  //   expect(document.body.contains(footerElement));
+  // });
 
   it('changes colour', () => {
     const { getByRole, getByTestId } = render(<App />);
