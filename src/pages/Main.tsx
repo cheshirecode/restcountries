@@ -2,9 +2,9 @@
 import type { FC, ChangeEvent } from 'react';
 import { useState, useMemo } from 'react';
 import { jsx, Container, Flex } from 'theme-ui';
-import FilteredCountryList from './FilteredCountryList';
-import FullCountryList from './FullCountryList';
-import RegionDropdown from './RegionDropdown';
+import FilteredCountryList from '../components/FilteredCountryList';
+import FullCountryList from '../components/FullCountryList';
+import RegionDropdown from '../components/RegionDropdown';
 import { cx } from '@emotion/css';
 import styled from '@emotion/styled';
 import type { BaseComponent } from '../typings';

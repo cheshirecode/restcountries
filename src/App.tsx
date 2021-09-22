@@ -1,20 +1,12 @@
 /** @jsx jsx */
 import type { FC } from 'react';
-import { jsx, ThemeProvider, Flex, Box, Spinner, Alert } from 'theme-ui';
+import { jsx, ThemeProvider, Flex, Box } from 'theme-ui';
 import ErrorBoundary from './components/ErrorBoundary';
 import Header from './components/Header';
-import { Route, Switch } from 'wouter';
-import { Suspense, lazy } from 'react';
+import Routes from './pages';
 import type { BaseComponent } from './typings';
 import { cx } from '@emotion/css';
 import theme from './styles/theme';
-
-const Main = lazy(() => import('./components/Main'));
-const MainRoute = () => (
-  <Suspense fallback={<Spinner />}>
-    <Main className="layout--main" />
-  </Suspense>
-);
 
 const App: FC<BaseComponent> = ({ className }) => {
   return (
@@ -42,12 +34,7 @@ const App: FC<BaseComponent> = ({ className }) => {
           variant="layout.mainDebug" // TODO - use layout.main after working version
         >
           <ErrorBoundary>
-            <Switch>
-              <Route path="/" component={MainRoute}></Route>
-              <Route>
-                <Alert role="alert">404</Alert>
-              </Route>
-            </Switch>
+            <Routes />
           </ErrorBoundary>
         </Box>
         <Box as="footer" variant="layout.footer"></Box>
