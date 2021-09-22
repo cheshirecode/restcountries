@@ -1,10 +1,10 @@
 /** @jsx jsx */
 import type { FC } from 'react';
-import { jsx, Container } from 'theme-ui';
+import { jsx, Container, Box, Button } from 'theme-ui';
 import ApiResponseHandler from '../components/ApiResponseHandler';
 import useCountryDetailsFetch from '../hooks/useCountryDetailsFetch';
 import { cx } from '@emotion/css';
-import styled from '@emotion/styled';
+
 import type { BaseComponent } from '../typings';
 
 const CountryDetails: FC<BaseComponent & { params: Record<string, string> }> = ({ className, params }) => {
@@ -13,13 +13,30 @@ const CountryDetails: FC<BaseComponent & { params: Record<string, string> }> = (
     fields: ['region'],
   });
 
+  const goBack = () => window.history.back();
   return (
     <ApiResponseHandler data={data} error={error}>
-      <Container className={cx(className, 'country-details')}></Container>
+      {data ? (
+        <Container className={cx(className, 'country-details')}>
+          <Box>
+            <Button px={4} onClick={goBack}>
+              <span
+                sx={{
+                  display: 'inline-block',
+                  transform: 'scaleX(2.5)',
+                  mr: '1em',
+                  fontSize: '0.875em',
+                }}
+              >
+                ←
+              </span>
+              Back
+            </Button>
+          </Box>
+        </Container>
+      ) : null}
     </ApiResponseHandler>
   );
 };
 
-const StyledMain = styled(CountryDetails)(() => ({}));
-
-export default StyledMain;
+export default CountryDetails;
