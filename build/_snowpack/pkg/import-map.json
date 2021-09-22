@@ -1,0 +1,14 @@
+{
+  "imports": {
+    "@emotion/css": "./@emotion/css.js",
+    "@emotion/styled": "./@emotion/styled.js",
+    "lodash-es": "./lodash-es.js",
+    "react": "./react.js",
+    "react-dom": "./react-dom.js",
+    "react-select": "./react-select.js",
+    "swr": "./swr.js",
+    "theme-ui": "./theme-ui.js",
+    "unfetch": "./unfetch.js",
+    "wouter": "./wouter.js"
+  }
+}
