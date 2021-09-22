@@ -1,5 +1,6 @@
 import { expect } from 'chai';
 import { subtractFromTotal, isValidHTTPScheme, getURI } from './';
+import consts from './const';
 
 describe('subtractFromTotal()', () => {
   it('should return correct subtraction', () => {
@@ -29,10 +30,10 @@ describe('getURI()', () => {
   it('should return a valid URL', () => {
     expect(getURI('https://foo.com')).to.be.eq('https://foo.com/');
     expect(getURI('https://foo.com/test', ['x', 'y'])).to.be.eq(
-      `https://foo.com/test?fields=${encodeURIComponent('x;y')}`,
+      `https://foo.com/test?fields=${encodeURIComponent(`x${consts.FIELDS_SEPARATOR}y`)}`,
     );
     expect(getURI('foo.com/?bar=1', [], 'http://')).to.be.eq('http://foo.com/?bar=1');
-    expect(getURI('/test')).to.be.eq('https://restcountries.eu/test');
+    expect(getURI('/test')).to.be.eq(`${consts.API_BASE_URL}/test`);
   });
 
   it('should return empty string otherwise', () => {
