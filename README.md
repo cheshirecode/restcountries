@@ -14,6 +14,10 @@ Reusable design system styles tokens like styling values (colours, fonts etc) an
 ### API models and handling
 I come up with Models as extendable Typescript interfaces as I go along the tasks, again with small building blocks and add more on top. To handle API calls, I use polyfilled native [fetch](https://github.com/developit/unfetch) with a small [wrapper](https://swr.vercel.app/) for caching and re-validation.
 
+#### No API requests currently
+ - https://restcountries.eu/ is no more and redirects to a paid version.
+ - Attempt to use https://restcountries.com/  got CORS error [issue](https://gitlab.com/amatos/rest-countries/-/issues/34)
+
 ### Tests
 I use the following
 - [Headless browser wrapper](https://modern-web.dev/docs/test-runner/overview/) 
