@@ -45,11 +45,11 @@ const Main: FC<BaseComponent> = ({ className }) => {
         >
           <i
             sx={{
-              transform: 'rotate(-45deg) scaleX(1.5)',
-              fontSize: '1em',
+              transform: 'rotate(-45deg)',
+              fontSize: '1.5em',
               position: 'absolute',
               ml: '3ch',
-              mt: '.625em',
+              mt: '.125em',
               color: 'text',
             }}
           >
@@ -59,7 +59,7 @@ const Main: FC<BaseComponent> = ({ className }) => {
             sx={{
               width: 'full',
               height: '2.5rem',
-              pl: '7ch',
+              pl: '8ch',
               color: 'text',
               backgroundColor: 'muted',
               border: 'none',
