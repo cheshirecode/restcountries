@@ -136,21 +136,14 @@ const CountryDetails: FC<BaseComponent & { params: Record<string, string> }> = (
               <Flex
                 as="ul"
                 sx={{
-                  '> li': { listStyleType: 'none' },
+                  '> li': { listStyleType: 'none', display: 'flex', alignItems: 'center' },
                   pl: 0,
                   flexWrap: 'wrap',
                   gap: [2, 3],
                   mt: [4, 5],
                 }}
               >
-                <Text
-                  variant="name"
-                  as="li"
-                  sx={{
-                    display: 'flex',
-                    alignItems: 'center',
-                  }}
-                >
+                <Text variant="name" as="li">
                   Borders
                 </Text>
                 {borders.map((x) => (
