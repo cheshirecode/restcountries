@@ -29,7 +29,7 @@ export const getURI: (path: string, fields?: string[], baseUrl?: string) => stri
     const urlObject = new URL(url);
     const params = urlObject.searchParams;
     if (Array.isArray(fields) && fields.length) {
-      params.append('fields', fields.join(';'));
+      params.append('fields', fields.join(consts.FIELDS_SEPARATOR));
     }
     return urlObject.toString();
   }

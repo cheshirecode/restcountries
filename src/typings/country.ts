@@ -24,6 +24,8 @@ export interface Country {
   flag: string;
   regionalBlocs: RegionalBloc[];
   cioc: string;
+  flags: string[];
+  continent?: string;
 }
 
 export interface Currency {
