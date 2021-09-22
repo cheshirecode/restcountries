@@ -3,7 +3,7 @@ import useFetch from '../hooks/useFetch';
 import endpoints from '../utils/endpoints';
 import type { Country, ErrorHttp, FetchResponse } from '../typings';
 import consts from '../utils/const';
-import countries from '../data/countries.json';
+import countriesWithDetails from '../data/countriesWithDetails.json';
 
 export interface CountryDetailsFetchParams {
   fullName: string;
@@ -20,7 +20,7 @@ const useCountryDetailsFetch: (params?: CountryDetailsFetchParams) => FetchRespo
   );
   // TODO - workaround for broken API
   if (!data && params?.fullName) {
-    data = (countries as Country[]).filter((x) => x.name === params?.fullName);
+    data = (countriesWithDetails as Country[]).filter((x) => x.name === params?.fullName);
     error = undefined;
   }
   return [data, error];
