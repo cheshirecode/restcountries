@@ -1,5 +1,6 @@
 import * as React from 'react';
 import { render, fireEvent, cleanup, waitFor } from '@testing-library/react';
+import { getByText, screen } from '@testing-library/dom';
 import { expect } from 'chai';
 import App from './App';
 
@@ -14,11 +15,6 @@ describe('<App>', () => {
     const mainElement = getByRole('main');
     expect(document.body.contains(mainElement));
   });
-  // it('has Footer', () => {
-  //   const { getByTestId } = render(<App />);
-  //   const footerElement = getByTestId('footer');
-  //   expect(document.body.contains(footerElement));
-  // });
 
   it('changes colour', () => {
     const { getByRole, getByTestId } = render(<App />);
@@ -48,17 +44,60 @@ describe('<App>', () => {
   });
 
   it('dropdown with regions, then selecting a region fetches filtered list of countries', async () => {
-    const { getByText, getByTestId } = render(<App />);
+    const { getByText, getByTestId, container } = render(<App />);
     await waitFor(() => {
       const dropdownElement = getByText('Filter by region', { exact: false });
       expect(document.body.contains(dropdownElement));
       fireEvent.mouseDown(dropdownElement);
-      const dropdownOptionElement = getByText('Asia');
-      fireEvent.click(dropdownOptionElement);
     });
+
+    await waitFor(() => {
+      // hardcoded react-select option ID because no label, no role to query from :(
+      const dropdownOptionElement = container.querySelector('#react-select-3-option-0');
+      if (dropdownOptionElement) {
+        expect(document.body.contains(dropdownOptionElement));
+        fireEvent.click(dropdownOptionElement);
+      }
+    });
+
     await waitFor(() => {
       const filteredCountryListElement = getByTestId('filtered-country-list');
       expect(document.body.contains(filteredCountryListElement));
+    });
+  });
+
+  it('click on a country should navigate to its details page', async () => {
+    const { getByLabelText, getByTestId } = render(<App />);
+    await waitFor(() => {
+      const singaporeElement = getByLabelText('Singapore', { exact: false });
+      expect(document.body.contains(singaporeElement));
+      fireEvent.click(singaporeElement);
+    });
+    await waitFor(() => {
+      const countryDetailsElement = getByTestId('country-details');
+      expect(document.body.contains(countryDetailsElement));
+    });
+  });
+
+  it("click on a country's border countries should navigate to its details page", async () => {
+    const { getByText, getByTestId, container } = render(<App />);
+    await waitFor(() => {
+      const ukElement = container.querySelector('[aria-label*="United Kingdom"]');
+      if (ukElement) {
+        expect(document.body.contains(ukElement));
+        fireEvent.click(ukElement);
+      }
+    });
+    await waitFor(() => {
+      const irlElement = container.querySelector('[href="/country-details/alpha3/IRL"]');
+      if (irlElement) {
+        expect(document.body.contains(irlElement));
+        fireEvent.click(irlElement);
+      }
+    });
+    await waitFor(() => {
+      const countryDetailsElement = getByTestId('country-details');
+      expect(document.body.contains(countryDetailsElement));
     });
   });
 });
