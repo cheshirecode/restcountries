@@ -178,6 +178,10 @@ const common = {
       backgroundColor: 'muted',
       listStyleType: 'none',
     },
+    full: {
+      maxWidth: '100%',
+      listStyleType: 'none',
+    },
   },
   alerts: {
     primary: {

@@ -30,7 +30,9 @@ const CountryList: FC<BaseComponent & { data: Country[] | undefined }> = ({ data
           </Card>
         ))
       ) : (
-        <Message>No countries found...</Message>
+        <Card as="li" variant="full">
+          <Message>No countries found...</Message>
+        </Card>
       )}
     </Grid>
   );
