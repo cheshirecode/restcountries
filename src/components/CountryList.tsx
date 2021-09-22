@@ -16,7 +16,7 @@ const CountryList: FC<BaseComponent & { data: Country[] | undefined }> = ({ data
               </Link>
             </RouterLink>
             <Box px={4} py={4}>
-              <Heading as="h3" mb={4}>
+              <Heading as="h2" mb={4}>
                 {name}
               </Heading>
               <Text variant="value">
