@@ -38,7 +38,12 @@ const Main: FC<BaseComponent> = ({ className }) => {
           mb: [5, 4],
         }}
       >
-        <Flex>
+        <Flex
+          sx={{
+            minWidth: [null, '27em'],
+            width: ['full', 'auto'],
+          }}
+        >
           <i
             sx={{
               transform: 'rotate(-45deg)',
@@ -52,7 +57,7 @@ const Main: FC<BaseComponent> = ({ className }) => {
           </i>
           <input
             sx={{
-              width: ['full', 'auto'],
+              width: 'full',
               pl: '3rem',
               height: '2.5rem',
               color: 'text',
