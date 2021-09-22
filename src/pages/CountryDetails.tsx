@@ -2,14 +2,16 @@
 import type { FC } from 'react';
 import { jsx, Container, Box, Button, Flex, AspectImage, Heading, Text } from 'theme-ui';
 import ApiResponseHandler from '../components/ApiResponseHandler';
+import { Link } from 'wouter';
 import useCountryDetailsFetch from '../hooks/useCountryDetailsFetch';
+import useCountriesByCodesFetch from '../hooks/useCountriesByCodesFetch';
 import { cx } from '@emotion/css';
 
 import type { BaseComponent } from '../typings';
 import type { Country } from '../typings/country';
 
 const CountryDetails: FC<BaseComponent & { params: Record<string, string> }> = ({ className, params }) => {
-  const [data, error] = useCountryDetailsFetch({
+  let [data, error] = useCountryDetailsFetch({
     fullName: params.fullName,
     fields: [
       'name',
@@ -26,6 +28,28 @@ const CountryDetails: FC<BaseComponent & { params: Record<string, string> }> = (
       'flags',
     ],
   });
+  const [byCodesData, byCodesError] = useCountriesByCodesFetch({
+    codes: [params.alpha3],
+    fields: [
+      'name',
+      'nativeName',
+      'population',
+      'continent',
+      'subregion',
+      'capital',
+      'topLevelDomain',
+      'currencies',
+      'languages',
+      'borders',
+      'flag',
+      'flags',
+    ],
+  });
+  if (!data) {
+    data = byCodesData;
+    error = byCodesError;
+  }
+
   const {
     name,
     nativeName,
@@ -39,7 +63,7 @@ const CountryDetails: FC<BaseComponent & { params: Record<string, string> }> = (
     borders,
     flag,
     flags,
-  } = (data ? data[0] : {}) as Country;
+  } = (data ? data[0] ?? {} : {}) as Country;
 
   const goBack = () => window.history.back();
   return (
@@ -71,7 +95,7 @@ const CountryDetails: FC<BaseComponent & { params: Record<string, string> }> = (
           >
             <Box
               sx={{
-                width: ['full', '1/2'],
+                width: ['full', 'full', '1/2'],
                 py: [5, 4],
                 pr: [5, 4],
               }}
@@ -82,7 +106,7 @@ const CountryDetails: FC<BaseComponent & { params: Record<string, string> }> = (
               px={4}
               py={4}
               sx={{
-                width: ['full', '1/2'],
+                width: ['full', 'full', '1/2'],
               }}
             >
               <Heading as="h2" my={4}>
@@ -120,10 +144,34 @@ const CountryDetails: FC<BaseComponent & { params: Record<string, string> }> = (
                 <Text variant="name">Languages</Text>
                 {languages.map((x) => x.name).join(', ')}
               </Text>
-              <Text variant="value">
-                <Text variant="name">Borders</Text>
-                {borders.join(', ')}
-              </Text>
+              <Flex
+                as="ul"
+                sx={{
+                  '> li': { listStyleType: 'none' },
+                  pl: 0,
+                  flexWrap: 'wrap',
+                  gap: [2, 3],
+                  mt: [4, 5],
+                }}
+              >
+                <Text
+                  variant="name"
+                  as="li"
+                  sx={{
+                    display: 'flex',
+                    alignItems: 'center',
+                  }}
+                >
+                  Borders
+                </Text>
+                {borders.map((x) => (
+                  <li key={x}>
+                    <Link href={`/country-details/alpha3/${x}`}>
+                      <Button px={4}>{x}</Button>
+                    </Link>
+                  </li>
+                ))}
+              </Flex>
             </Box>
           </Flex>
         </Container>

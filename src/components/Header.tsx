@@ -3,6 +3,7 @@ import React from 'react';
 import type { FC } from 'react';
 import type { BaseComponent } from '../typings';
 import { jsx, Text } from 'theme-ui';
+import { Link } from 'wouter';
 import MoonIcon from '../components/MoonIcon';
 import StackedSidebar from './layouts/StackedSidebar';
 import useColourMode from '../hooks/useColourMode';
@@ -11,7 +12,23 @@ import { cx } from '@emotion/css';
 const Header: FC<BaseComponent> = ({ className }) => {
   const [colourMode, nextColour, onClickChangeColourMode] = useColourMode();
   return (
-    <StackedSidebar className={cx(className)} Sidebar={<Text variant="heading">Where in the world?</Text>}>
+    <StackedSidebar
+      className={cx(className)}
+      Sidebar={
+        <Link href={`/`}>
+          <Text
+            variant="heading"
+            as="a"
+            sx={{
+              color: 'inherit',
+              textDecoration: 'none',
+            }}
+          >
+            Where in the world?
+          </Text>
+        </Link>
+      }
+    >
       <>
         <MoonIcon
           sx={{

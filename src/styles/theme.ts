@@ -11,7 +11,7 @@ const common = {
   // using typographic scale, set a root-level font size and specific length in CSS units (relative - em or absolute - rem)
   fontSizes: [12, 14, 16, 20, 24, 32, 48, 64, 72],
   // default breakpoints in CSS units 375px 896px 1440px
-  breakpoints: ['23.4375em', '56em', '90em'],
+  breakpoints: ['23.4375em', '40em', '56em', '90em'],
   // base scale for use with layout-related CSS properties like margin, padding, grid-gap etc
   space: [0, 4, 8, 16, 32, 64, 128, 256, 512],
   // base scale for use with width, height, min-width, max-width, min-height, max-height. values from from tailwind

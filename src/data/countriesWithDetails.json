@@ -35,6 +35,7 @@
     "topLevelDomain": [
       ".af"
     ],
+    "alpha3Code": "AFG",
     "capital": "Kabul",
     "continent": "Asia",
     "population": 27657145,
@@ -72,6 +73,7 @@
     "topLevelDomain": [
       ".al"
     ],
+    "alpha3Code": "ALB",
     "capital": "Tirana",
     "continent": "Europe",
     "population": 2886026,
@@ -107,6 +109,7 @@
     "topLevelDomain": [
       ".dz"
     ],
+    "alpha3Code": "DZA",
     "capital": "Algiers",
     "continent": "Africa",
     "population": 40400000,
@@ -151,6 +154,7 @@
     "topLevelDomain": [
       ".as"
     ],
+    "alpha3Code": "ASM",
     "capital": "Pago Pago",
     "continent": "Oceania",
     "population": 57100,
@@ -181,6 +185,7 @@
     "topLevelDomain": [
       ".ad"
     ],
+    "alpha3Code": "AND",
     "capital": "Andorra la Vella",
     "continent": "Europe",
     "population": 78014,
@@ -214,6 +219,7 @@
     "topLevelDomain": [
       ".ao"
     ],
+    "alpha3Code": "AGO",
     "capital": "Luanda",
     "continent": "Africa",
     "population": 25868000,
@@ -249,6 +255,7 @@
     "topLevelDomain": [
       ".ai"
     ],
+    "alpha3Code": "AIA",
     "capital": "The Valley",
     "continent": "Americas",
     "population": 13452,
@@ -279,6 +286,7 @@
     "topLevelDomain": [
       ".aq"
     ],
+    "alpha3Code": "ATA",
     "capital": "",
     "continent": "Polar",
     "population": 1000,
@@ -309,6 +317,7 @@
     "topLevelDomain": [
       ".ag"
     ],
+    "alpha3Code": "ATG",
     "capital": "Saint John's",
     "continent": "Americas",
     "population": 86295,
@@ -345,6 +354,7 @@
     "topLevelDomain": [
       ".ar"
     ],
+    "alpha3Code": "ARG",
     "capital": "Buenos Aires",
     "continent": "Americas",
     "population": 43590400,
@@ -381,6 +391,7 @@
     "topLevelDomain": [
       ".am"
     ],
+    "alpha3Code": "ARM",
     "capital": "Yerevan",
     "continent": "Asia",
     "population": 2994400,
@@ -422,6 +433,7 @@
     "topLevelDomain": [
       ".aw"
     ],
+    "alpha3Code": "ABW",
     "capital": "Oranjestad",
     "continent": "Americas",
     "population": 107394,
@@ -452,6 +464,7 @@
     "topLevelDomain": [
       ".au"
     ],
+    "alpha3Code": "AUS",
     "capital": "Canberra",
     "continent": "Oceania",
     "population": 24117360,
@@ -482,6 +495,7 @@
     "topLevelDomain": [
       ".at"
     ],
+    "alpha3Code": "AUT",
     "capital": "Vienna",
     "continent": "Europe",
     "population": 8725931,
@@ -521,6 +535,7 @@
     "topLevelDomain": [
       ".az"
     ],
+    "alpha3Code": "AZE",
     "capital": "Baku",
     "continent": "Asia",
     "population": 9730500,
@@ -557,6 +572,7 @@
     "topLevelDomain": [
       ".bs"
     ],
+    "alpha3Code": "BHS",
     "capital": "Nassau",
     "continent": "Americas",
     "population": 378040,
@@ -587,6 +603,7 @@
     "topLevelDomain": [
       ".bh"
     ],
+    "alpha3Code": "BHR",
     "capital": "Manama",
     "continent": "Asia",
     "population": 1404900,
@@ -617,6 +634,7 @@
     "topLevelDomain": [
       ".bd"
     ],
+    "alpha3Code": "BGD",
     "capital": "Dhaka",
     "continent": "Asia",
     "population": 161006790,
@@ -650,6 +668,7 @@
     "topLevelDomain": [
       ".bb"
     ],
+    "alpha3Code": "BRB",
     "capital": "Bridgetown",
     "continent": "Americas",
     "population": 285000,
@@ -691,6 +710,7 @@
     "topLevelDomain": [
       ".by"
     ],
+    "alpha3Code": "BLR",
     "capital": "Minsk",
     "continent": "Europe",
     "population": 9498700,
@@ -739,6 +759,7 @@
     "topLevelDomain": [
       ".be"
     ],
+    "alpha3Code": "BEL",
     "capital": "Brussels",
     "continent": "Europe",
     "population": 11319511,
@@ -780,6 +801,7 @@
     "topLevelDomain": [
       ".bz"
     ],
+    "alpha3Code": "BLZ",
     "capital": "Belmopan",
     "continent": "Americas",
     "population": 370300,
@@ -813,6 +835,7 @@
     "topLevelDomain": [
       ".bj"
     ],
+    "alpha3Code": "BEN",
     "capital": "Porto-Novo",
     "continent": "Africa",
     "population": 10653654,
@@ -848,6 +871,7 @@
     "topLevelDomain": [
       ".bm"
     ],
+    "alpha3Code": "BMU",
     "capital": "Hamilton",
     "continent": "Americas",
     "population": 61954,
@@ -883,6 +907,7 @@
     "topLevelDomain": [
       ".bt"
     ],
+    "alpha3Code": "BTN",
     "capital": "Thimphu",
     "continent": "Asia",
     "population": 775620,
@@ -928,6 +953,7 @@
     "topLevelDomain": [
       ".bo"
     ],
+    "alpha3Code": "BOL",
     "capital": "Sucre",
     "continent": "Americas",
     "population": 10985059,
@@ -965,6 +991,7 @@
       ".an",
       ".nl"
     ],
+    "alpha3Code": "BES",
     "capital": "Kralendijk",
     "continent": "Americas",
     "population": 17408,
@@ -1007,6 +1034,7 @@
     "topLevelDomain": [
       ".ba"
     ],
+    "alpha3Code": "BIH",
     "capital": "Sarajevo",
     "continent": "Europe",
     "population": 3531159,
@@ -1047,6 +1075,7 @@
     "topLevelDomain": [
       ".bw"
     ],
+    "alpha3Code": "BWA",
     "capital": "Gaborone",
     "continent": "Africa",
     "population": 2141206,
@@ -1094,6 +1123,7 @@
     "topLevelDomain": [
       ".bv"
     ],
+    "alpha3Code": "BVT",
     "capital": "",
     "continent": "Antarctic Ocean",
     "population": 0,
@@ -1124,6 +1154,7 @@
     "topLevelDomain": [
       ".br"
     ],
+    "alpha3Code": "BRA",
     "capital": "Brasília",
     "continent": "Americas",
     "population": 206135893,
@@ -1166,6 +1197,7 @@
     "topLevelDomain": [
       ".io"
     ],
+    "alpha3Code": "IOT",
     "capital": "Diego Garcia",
     "continent": "Africa",
     "population": 3000,
@@ -1196,6 +1228,7 @@
     "topLevelDomain": [
       ".us"
     ],
+    "alpha3Code": "UMI",
     "capital": "",
     "continent": "Americas",
     "population": 300,
@@ -1226,6 +1259,7 @@
     "topLevelDomain": [
       ".vg"
     ],
+    "alpha3Code": "VGB",
     "capital": "Road Town",
     "continent": "Americas",
     "population": 28514,
@@ -1256,6 +1290,7 @@
     "topLevelDomain": [
       ".vi"
     ],
+    "alpha3Code": "VIR",
     "capital": "Charlotte Amalie",
     "continent": "Americas",
     "population": 114743,
@@ -1291,6 +1326,7 @@
     "topLevelDomain": [
       ".bn"
     ],
+    "alpha3Code": "BRN",
     "capital": "Bandar Seri Begawan",
     "continent": "Asia",
     "population": 411900,
@@ -1323,6 +1359,7 @@
     "topLevelDomain": [
       ".bg"
     ],
+    "alpha3Code": "BGR",
     "capital": "Sofia",
     "continent": "Europe",
     "population": 7153784,
@@ -1365,6 +1402,7 @@
     "topLevelDomain": [
       ".bf"
     ],
+    "alpha3Code": "BFA",
     "capital": "Ouagadougou",
     "continent": "Africa",
     "population": 19034397,
@@ -1408,6 +1446,7 @@
     "topLevelDomain": [
       ".bi"
     ],
+    "alpha3Code": "BDI",
     "capital": "Bujumbura",
     "continent": "Africa",
     "population": 10114505,
@@ -1447,6 +1486,7 @@
     "topLevelDomain": [
       ".kh"
     ],
+    "alpha3Code": "KHM",
     "capital": "Phnom Penh",
     "continent": "Asia",
     "population": 15626444,
@@ -1487,6 +1527,7 @@
     "topLevelDomain": [
       ".cm"
     ],
+    "alpha3Code": "CMR",
     "capital": "Yaoundé",
     "continent": "Africa",
     "population": 22709892,
@@ -1530,6 +1571,7 @@
     "topLevelDomain": [
       ".ca"
     ],
+    "alpha3Code": "CAN",
     "capital": "Ottawa",
     "continent": "Americas",
     "population": 36155487,
@@ -1562,6 +1604,7 @@
     "topLevelDomain": [
       ".cv"
     ],
+    "alpha3Code": "CPV",
     "capital": "Praia",
     "continent": "Africa",
     "population": 531239,
@@ -1592,6 +1635,7 @@
     "topLevelDomain": [
       ".ky"
     ],
+    "alpha3Code": "CYM",
     "capital": "George Town",
     "continent": "Americas",
     "population": 58238,
@@ -1628,6 +1672,7 @@
     "topLevelDomain": [
       ".cf"
     ],
+    "alpha3Code": "CAF",
     "capital": "Bangui",
     "continent": "Africa",
     "population": 4998000,
@@ -1671,6 +1716,7 @@
     "topLevelDomain": [
       ".td"
     ],
+    "alpha3Code": "TCD",
     "capital": "N'Djamena",
     "continent": "Africa",
     "population": 14497000,
@@ -1708,6 +1754,7 @@
     "topLevelDomain": [
       ".cl"
     ],
+    "alpha3Code": "CHL",
     "capital": "Santiago",
     "continent": "Americas",
     "population": 18191900,
@@ -1742,6 +1789,7 @@
     "topLevelDomain": [
       ".cn"
     ],
+    "alpha3Code": "CHN",
     "capital": "Beijing",
     "continent": "Asia",
     "population": 1377422166,
@@ -1789,6 +1837,7 @@
     "topLevelDomain": [
       ".cx"
     ],
+    "alpha3Code": "CXR",
     "capital": "Flying Fish Cove",
     "continent": "Oceania",
     "population": 2072,
@@ -1819,6 +1868,7 @@
     "topLevelDomain": [
       ".cc"
     ],
+    "alpha3Code": "CCK",
     "capital": "West Island",
     "continent": "Oceania",
     "population": 550,
@@ -1849,6 +1899,7 @@
     "topLevelDomain": [
       ".co"
     ],
+    "alpha3Code": "COL",
     "capital": "Bogotá",
     "continent": "Americas",
     "population": 48759958,
@@ -1891,6 +1942,7 @@
     "topLevelDomain": [
       ".km"
     ],
+    "alpha3Code": "COM",
     "capital": "Moroni",
     "continent": "Africa",
     "population": 806153,
@@ -1927,6 +1979,7 @@
     "topLevelDomain": [
       ".cg"
     ],
+    "alpha3Code": "COG",
     "capital": "Brazzaville",
     "continent": "Africa",
     "population": 4741000,
@@ -1987,6 +2040,7 @@
     "topLevelDomain": [
       ".cd"
     ],
+    "alpha3Code": "COD",
     "capital": "Kinshasa",
     "continent": "Africa",
     "population": 85026000,
@@ -2037,6 +2091,7 @@
     "topLevelDomain": [
       ".ck"
     ],
+    "alpha3Code": "COK",
     "capital": "Avarua",
     "continent": "Oceania",
     "population": 18100,
@@ -2067,6 +2122,7 @@
     "topLevelDomain": [
       ".cr"
     ],
+    "alpha3Code": "CRI",
     "capital": "San José",
     "continent": "Americas",
     "population": 4890379,
@@ -2100,6 +2156,7 @@
     "topLevelDomain": [
       ".hr"
     ],
+    "alpha3Code": "HRV",
     "capital": "Zagreb",
     "continent": "Europe",
     "population": 4190669,
@@ -2141,6 +2198,7 @@
     "topLevelDomain": [
       ".cu"
     ],
+    "alpha3Code": "CUB",
     "capital": "Havana",
     "continent": "Americas",
     "population": 11239004,
@@ -2183,6 +2241,7 @@
     "topLevelDomain": [
       ".cw"
     ],
+    "alpha3Code": "CUW",
     "capital": "Willemstad",
     "continent": "Americas",
     "population": 154843,
@@ -2225,6 +2284,7 @@
     "topLevelDomain": [
       ".cy"
     ],
+    "alpha3Code": "CYP",
     "capital": "Nicosia",
     "continent": "Europe",
     "population": 847000,
@@ -2263,6 +2323,7 @@
     "topLevelDomain": [
       ".cz"
     ],
+    "alpha3Code": "CZE",
     "capital": "Prague",
     "continent": "Europe",
     "population": 10558524,
@@ -2293,6 +2354,7 @@
     "topLevelDomain": [
       ".dk"
     ],
+    "alpha3Code": "DNK",
     "capital": "Copenhagen",
     "continent": "Europe",
     "population": 5717014,
@@ -2331,6 +2393,7 @@
     "topLevelDomain": [
       ".dj"
     ],
+    "alpha3Code": "DJI",
     "capital": "Djibouti",
     "continent": "Africa",
     "population": 900000,
@@ -2365,6 +2428,7 @@
     "topLevelDomain": [
       ".dm"
     ],
+    "alpha3Code": "DMA",
     "capital": "Roseau",
     "continent": "Americas",
     "population": 71293,
@@ -2395,6 +2459,7 @@
     "topLevelDomain": [
       ".do"
     ],
+    "alpha3Code": "DOM",
     "capital": "Santo Domingo",
     "continent": "Americas",
     "population": 10075045,
@@ -2427,6 +2492,7 @@
     "topLevelDomain": [
       ".ec"
     ],
+    "alpha3Code": "ECU",
     "capital": "Quito",
     "continent": "Americas",
     "population": 16545799,
@@ -2460,6 +2526,7 @@
     "topLevelDomain": [
       ".eg"
     ],
+    "alpha3Code": "EGY",
     "capital": "Cairo",
     "continent": "Africa",
     "population": 91290000,
@@ -2494,6 +2561,7 @@
     "topLevelDomain": [
       ".sv"
     ],
+    "alpha3Code": "SLV",
     "capital": "San Salvador",
     "continent": "Americas",
     "population": 6520675,
@@ -2545,6 +2613,7 @@
     "topLevelDomain": [
       ".gq"
     ],
+    "alpha3Code": "GNQ",
     "capital": "Malabo",
     "continent": "Africa",
     "population": 1222442,
@@ -2626,6 +2695,7 @@
     "topLevelDomain": [
       ".er"
     ],
+    "alpha3Code": "ERI",
     "capital": "Asmara",
     "continent": "Africa",
     "population": 5352000,
@@ -2660,6 +2730,7 @@
     "topLevelDomain": [
       ".ee"
     ],
+    "alpha3Code": "EST",
     "capital": "Tallinn",
     "continent": "Europe",
     "population": 1315944,
@@ -2693,6 +2764,7 @@
     "topLevelDomain": [
       ".et"
     ],
+    "alpha3Code": "ETH",
     "capital": "Addis Ababa",
     "continent": "Africa",
     "population": 92206005,
@@ -2730,6 +2802,7 @@
     "topLevelDomain": [
       ".fk"
     ],
+    "alpha3Code": "FLK",
     "capital": "Stanley",
     "continent": "Americas",
     "population": 2563,
@@ -2765,6 +2838,7 @@
     "topLevelDomain": [
       ".fo"
     ],
+    "alpha3Code": "FRO",
     "capital": "Tórshavn",
     "continent": "Europe",
     "population": 49376,
@@ -2813,6 +2887,7 @@
     "topLevelDomain": [
       ".fj"
     ],
+    "alpha3Code": "FJI",
     "capital": "Suva",
     "continent": "Oceania",
     "population": 867000,
@@ -2849,6 +2924,7 @@
     "topLevelDomain": [
       ".fi"
     ],
+    "alpha3Code": "FIN",
     "capital": "Helsinki",
     "continent": "Europe",
     "population": 5491817,
@@ -2883,6 +2959,7 @@
     "topLevelDomain": [
       ".fr"
     ],
+    "alpha3Code": "FRA",
     "capital": "Paris",
     "continent": "Europe",
     "population": 66710000,
@@ -2922,6 +2999,7 @@
     "topLevelDomain": [
       ".gf"
     ],
+    "alpha3Code": "GUF",
     "capital": "Cayenne",
     "continent": "Americas",
     "population": 254541,
@@ -2955,6 +3033,7 @@
     "topLevelDomain": [
       ".pf"
     ],
+    "alpha3Code": "PYF",
     "capital": "Papeetē",
     "continent": "Oceania",
     "population": 271800,
@@ -2985,6 +3064,7 @@
     "topLevelDomain": [
       ".tf"
     ],
+    "alpha3Code": "ATF",
     "capital": "Port-aux-Français",
     "continent": "Africa",
     "population": 140,
@@ -3015,6 +3095,7 @@
     "topLevelDomain": [
       ".ga"
     ],
+    "alpha3Code": "GAB",
     "capital": "Libreville",
     "continent": "Africa",
     "population": 1802278,
@@ -3049,6 +3130,7 @@
     "topLevelDomain": [
       ".gm"
     ],
+    "alpha3Code": "GMB",
     "capital": "Banjul",
     "continent": "Africa",
     "population": 1882450,
@@ -3081,6 +3163,7 @@
     "topLevelDomain": [
       ".ge"
     ],
+    "alpha3Code": "GEO",
     "capital": "Tbilisi",
     "continent": "Asia",
     "population": 3720400,
@@ -3116,6 +3199,7 @@
     "topLevelDomain": [
       ".de"
     ],
+    "alpha3Code": "DEU",
     "capital": "Berlin",
     "continent": "Europe",
     "population": 81770900,
@@ -3156,6 +3240,7 @@
     "topLevelDomain": [
       ".gh"
     ],
+    "alpha3Code": "GHA",
     "capital": "Accra",
     "continent": "Africa",
     "population": 27670174,
@@ -3190,6 +3275,7 @@
     "topLevelDomain": [
       ".gi"
     ],
+    "alpha3Code": "GIB",
     "capital": "Gibraltar",
     "continent": "Europe",
     "population": 33140,
@@ -3222,6 +3308,7 @@
     "topLevelDomain": [
       ".gr"
     ],
+    "alpha3Code": "GRC",
     "capital": "Athens",
     "continent": "Europe",
     "population": 10858018,
@@ -3257,6 +3344,7 @@
     "topLevelDomain": [
       ".gl"
     ],
+    "alpha3Code": "GRL",
     "capital": "Nuuk",
     "continent": "Americas",
     "population": 55847,
@@ -3287,6 +3375,7 @@
     "topLevelDomain": [
       ".gd"
     ],
+    "alpha3Code": "GRD",
     "capital": "St. George's",
     "continent": "Americas",
     "population": 103328,
@@ -3317,6 +3406,7 @@
     "topLevelDomain": [
       ".gp"
     ],
+    "alpha3Code": "GLP",
     "capital": "Basse-Terre",
     "continent": "Americas",
     "population": 400132,
@@ -3359,6 +3449,7 @@
     "topLevelDomain": [
       ".gu"
     ],
+    "alpha3Code": "GUM",
     "capital": "Hagåtña",
     "continent": "Oceania",
     "population": 184200,
@@ -3389,6 +3480,7 @@
     "topLevelDomain": [
       ".gt"
     ],
+    "alpha3Code": "GTM",
     "capital": "Guatemala City",
     "continent": "Americas",
     "population": 16176133,
@@ -3435,6 +3527,7 @@
     "topLevelDomain": [
       ".gg"
     ],
+    "alpha3Code": "GGY",
     "capital": "St. Peter Port",
     "continent": "Europe",
     "population": 62999,
@@ -3471,6 +3564,7 @@
     "topLevelDomain": [
       ".gn"
     ],
+    "alpha3Code": "GIN",
     "capital": "Conakry",
     "continent": "Africa",
     "population": 12947000,
@@ -3508,6 +3602,7 @@
     "topLevelDomain": [
       ".gw"
     ],
+    "alpha3Code": "GNB",
     "capital": "Bissau",
     "continent": "Africa",
     "population": 1547777,
@@ -3541,6 +3636,7 @@
     "topLevelDomain": [
       ".gy"
     ],
+    "alpha3Code": "GUY",
     "capital": "Georgetown",
     "continent": "Americas",
     "population": 746900,
@@ -3581,6 +3677,7 @@
     "topLevelDomain": [
       ".ht"
     ],
+    "alpha3Code": "HTI",
     "capital": "Port-au-Prince",
     "continent": "Americas",
     "population": 11078033,
@@ -3614,6 +3711,7 @@
       ".hm",
       ".aq"
     ],
+    "alpha3Code": "HMD",
     "capital": "",
     "continent": "",
     "population": 0,
@@ -3662,6 +3760,7 @@
     "topLevelDomain": [
       ".va"
     ],
+    "alpha3Code": "VAT",
     "capital": "Rome",
     "continent": "Europe",
     "population": 451,
@@ -3694,6 +3793,7 @@
     "topLevelDomain": [
       ".hn"
     ],
+    "alpha3Code": "HND",
     "capital": "Tegucigalpa",
     "continent": "Americas",
     "population": 8576532,
@@ -3728,6 +3828,7 @@
     "topLevelDomain": [
       ".hu"
     ],
+    "alpha3Code": "HUN",
     "capital": "Budapest",
     "continent": "Europe",
     "population": 9823000,
@@ -3766,6 +3867,7 @@
     "topLevelDomain": [
       ".is"
     ],
+    "alpha3Code": "ISL",
     "capital": "Reykjavík",
     "continent": "Europe",
     "population": 334300,
@@ -3802,6 +3904,7 @@
     "topLevelDomain": [
       ".in"
     ],
+    "alpha3Code": "IND",
     "capital": "New Delhi",
     "continent": "Asia",
     "population": 1378712489,
@@ -3841,6 +3944,7 @@
     "topLevelDomain": [
       ".id"
     ],
+    "alpha3Code": "IDN",
     "capital": "Jakarta",
     "continent": "Asia",
     "population": 258705000,
@@ -3875,6 +3979,7 @@
     "topLevelDomain": [
       ".ci"
     ],
+    "alpha3Code": "CIV",
     "capital": "Yamoussoukro",
     "continent": "Africa",
     "population": 22671331,
@@ -3911,6 +4016,7 @@
     "topLevelDomain": [
       ".ir"
     ],
+    "alpha3Code": "IRN",
     "capital": "Tehran",
     "continent": "Asia",
     "population": 79369900,
@@ -3955,6 +4061,7 @@
     "topLevelDomain": [
       ".iq"
     ],
+    "alpha3Code": "IRQ",
     "capital": "Baghdad",
     "continent": "Asia",
     "population": 37883543,
@@ -3998,6 +4105,7 @@
     "topLevelDomain": [
       ".ie"
     ],
+    "alpha3Code": "IRL",
     "capital": "Dublin",
     "continent": "Europe",
     "population": 6378000,
@@ -4041,6 +4149,7 @@
     "topLevelDomain": [
       ".im"
     ],
+    "alpha3Code": "IMN",
     "capital": "Douglas",
     "continent": "Europe",
     "population": 84497,
@@ -4077,6 +4186,7 @@
     "topLevelDomain": [
       ".il"
     ],
+    "alpha3Code": "ISR",
     "capital": "Jerusalem",
     "continent": "Asia",
     "population": 8527400,
@@ -4112,6 +4222,7 @@
     "topLevelDomain": [
       ".it"
     ],
+    "alpha3Code": "ITA",
     "capital": "Rome",
     "continent": "Europe",
     "population": 60665551,
@@ -4149,6 +4260,7 @@
     "topLevelDomain": [
       ".jm"
     ],
+    "alpha3Code": "JAM",
     "capital": "Kingston",
     "continent": "Americas",
     "population": 2723246,
@@ -4179,6 +4291,7 @@
     "topLevelDomain": [
       ".jp"
     ],
+    "alpha3Code": "JPN",
     "capital": "Tokyo",
     "continent": "Asia",
     "population": 126960000,
@@ -4220,6 +4333,7 @@
     "topLevelDomain": [
       ".je"
     ],
+    "alpha3Code": "JEY",
     "capital": "Saint Helier",
     "continent": "Europe",
     "population": 100800,
@@ -4250,6 +4364,7 @@
     "topLevelDomain": [
       ".jo"
     ],
+    "alpha3Code": "JOR",
     "capital": "Amman",
     "continent": "Asia",
     "population": 9531712,
@@ -4292,6 +4407,7 @@
       ".kz",
       ".қаз"
     ],
+    "alpha3Code": "KAZ",
     "capital": "Nursultan",
     "continent": "Asia",
     "population": 17753200,
@@ -4334,6 +4450,7 @@
     "topLevelDomain": [
       ".ke"
     ],
+    "alpha3Code": "KEN",
     "capital": "Nairobi",
     "continent": "Africa",
     "population": 47251000,
@@ -4375,6 +4492,7 @@
     "topLevelDomain": [
       ".ki"
     ],
+    "alpha3Code": "KIR",
     "capital": "South Tarawa",
     "continent": "Oceania",
     "population": 113400,
@@ -4405,6 +4523,7 @@
     "topLevelDomain": [
       ".kw"
     ],
+    "alpha3Code": "KWT",
     "capital": "Kuwait City",
     "continent": "Asia",
     "population": 4183658,
@@ -4444,6 +4563,7 @@
     "topLevelDomain": [
       ".kg"
     ],
+    "alpha3Code": "KGZ",
     "capital": "Bishkek",
     "continent": "Asia",
     "population": 6047800,
@@ -4479,6 +4599,7 @@
     "topLevelDomain": [
       ".la"
     ],
+    "alpha3Code": "LAO",
     "capital": "Vientiane",
     "continent": "Asia",
     "population": 6492400,
@@ -4515,6 +4636,7 @@
     "topLevelDomain": [
       ".lv"
     ],
+    "alpha3Code": "LVA",
     "capital": "Riga",
     "continent": "Europe",
     "population": 1961600,
@@ -4556,6 +4678,7 @@
     "topLevelDomain": [
       ".lb"
     ],
+    "alpha3Code": "LBN",
     "capital": "Beirut",
     "continent": "Asia",
     "population": 5988000,
@@ -4600,6 +4723,7 @@
     "topLevelDomain": [
       ".ls"
     ],
+    "alpha3Code": "LSO",
     "capital": "Maseru",
     "continent": "Africa",
     "population": 1894194,
@@ -4632,6 +4756,7 @@
     "topLevelDomain": [
       ".lr"
     ],
+    "alpha3Code": "LBR",
     "capital": "Monrovia",
     "continent": "Africa",
     "population": 4615000,
@@ -4666,6 +4791,7 @@
     "topLevelDomain": [
       ".ly"
     ],
+    "alpha3Code": "LBY",
     "capital": "Tripoli",
     "continent": "Africa",
     "population": 6385000,
@@ -4703,6 +4829,7 @@
     "topLevelDomain": [
       ".li"
     ],
+    "alpha3Code": "LIE",
     "capital": "Vaduz",
     "continent": "Europe",
     "population": 37623,
@@ -4736,6 +4863,7 @@
     "topLevelDomain": [
       ".lt"
     ],
+    "alpha3Code": "LTU",
     "capital": "Vilnius",
     "continent": "Europe",
     "population": 2872294,
@@ -4783,6 +4911,7 @@
     "topLevelDomain": [
       ".lu"
     ],
+    "alpha3Code": "LUX",
     "capital": "Luxembourg",
     "continent": "Europe",
     "population": 576200,
@@ -4823,6 +4952,7 @@
     "topLevelDomain": [
       ".mo"
     ],
+    "alpha3Code": "MAC",
     "capital": "",
     "continent": "Asia",
     "population": 649100,
@@ -4855,6 +4985,7 @@
     "topLevelDomain": [
       ".mk"
     ],
+    "alpha3Code": "MKD",
     "capital": "Skopje",
     "continent": "Europe",
     "population": 2058539,
@@ -4897,6 +5028,7 @@
     "topLevelDomain": [
       ".mg"
     ],
+    "alpha3Code": "MDG",
     "capital": "Antananarivo",
     "continent": "Africa",
     "population": 22434363,
@@ -4933,6 +5065,7 @@
     "topLevelDomain": [
       ".mw"
     ],
+    "alpha3Code": "MWI",
     "capital": "Lilongwe",
     "continent": "Africa",
     "population": 16832910,
@@ -4967,6 +5100,7 @@
     "topLevelDomain": [
       ".my"
     ],
+    "alpha3Code": "MYS",
     "capital": "Kuala Lumpur",
     "continent": "Asia",
     "population": 31405416,
@@ -5001,6 +5135,7 @@
     "topLevelDomain": [
       ".mv"
     ],
+    "alpha3Code": "MDV",
     "capital": "Malé",
     "continent": "Asia",
     "population": 344023,
@@ -5031,6 +5166,7 @@
     "topLevelDomain": [
       ".ml"
     ],
+    "alpha3Code": "MLI",
     "capital": "Bamako",
     "continent": "Africa",
     "population": 18135000,
@@ -5075,6 +5211,7 @@
     "topLevelDomain": [
       ".mt"
     ],
+    "alpha3Code": "MLT",
     "capital": "Valletta",
     "continent": "Europe",
     "population": 425384,
@@ -5111,6 +5248,7 @@
     "topLevelDomain": [
       ".mh"
     ],
+    "alpha3Code": "MHL",
     "capital": "Majuro",
     "continent": "Oceania",
     "population": 54880,
@@ -5141,6 +5279,7 @@
     "topLevelDomain": [
       ".mq"
     ],
+    "alpha3Code": "MTQ",
     "capital": "Fort-de-France",
     "continent": "Americas",
     "population": 378243,
@@ -5171,6 +5310,7 @@
     "topLevelDomain": [
       ".mr"
     ],
+    "alpha3Code": "MRT",
     "capital": "Nouakchott",
     "continent": "Africa",
     "population": 3718678,
@@ -5206,6 +5346,7 @@
     "topLevelDomain": [
       ".mu"
     ],
+    "alpha3Code": "MUS",
     "capital": "Port Louis",
     "continent": "Africa",
     "population": 1262879,
@@ -5236,6 +5377,7 @@
     "topLevelDomain": [
       ".yt"
     ],
+    "alpha3Code": "MYT",
     "capital": "Mamoudzou",
     "continent": "Africa",
     "population": 226915,
@@ -5266,6 +5408,7 @@
     "topLevelDomain": [
       ".mx"
     ],
+    "alpha3Code": "MEX",
     "capital": "Mexico City",
     "continent": "Americas",
     "population": 122273473,
@@ -5300,6 +5443,7 @@
     "topLevelDomain": [
       ".fm"
     ],
+    "alpha3Code": "FSM",
     "capital": "Palikir",
     "continent": "Oceania",
     "population": 102800,
@@ -5330,6 +5474,7 @@
     "topLevelDomain": [
       ".md"
     ],
+    "alpha3Code": "MDA",
     "capital": "Chișinău",
     "continent": "Europe",
     "population": 3553100,
@@ -5363,6 +5508,7 @@
     "topLevelDomain": [
       ".mc"
     ],
+    "alpha3Code": "MCO",
     "capital": "Monaco",
     "continent": "Europe",
     "population": 38400,
@@ -5395,6 +5541,7 @@
     "topLevelDomain": [
       ".mn"
     ],
+    "alpha3Code": "MNG",
     "capital": "Ulan Bator",
     "continent": "Asia",
     "population": 3093100,
@@ -5446,6 +5593,7 @@
     "topLevelDomain": [
       ".me"
     ],
+    "alpha3Code": "MNE",
     "capital": "Podgorica",
     "continent": "Europe",
     "population": 621810,
@@ -5482,6 +5630,7 @@
     "topLevelDomain": [
       ".ms"
     ],
+    "alpha3Code": "MSR",
     "capital": "Plymouth",
     "continent": "Americas",
     "population": 4922,
@@ -5512,6 +5661,7 @@
     "topLevelDomain": [
       ".ma"
     ],
+    "alpha3Code": "MAR",
     "capital": "Rabat",
     "continent": "Africa",
     "population": 33337529,
@@ -5546,6 +5696,7 @@
     "topLevelDomain": [
       ".mz"
     ],
+    "alpha3Code": "MOZ",
     "capital": "Maputo",
     "continent": "Africa",
     "population": 26423700,
@@ -5583,6 +5734,7 @@
     "topLevelDomain": [
       ".mm"
     ],
+    "alpha3Code": "MMR",
     "capital": "Naypyidaw",
     "continent": "Asia",
     "population": 51419420,
@@ -5630,6 +5782,7 @@
     "topLevelDomain": [
       ".na"
     ],
+    "alpha3Code": "NAM",
     "capital": "Windhoek",
     "continent": "Africa",
     "population": 2324388,
@@ -5671,6 +5824,7 @@
     "topLevelDomain": [
       ".nr"
     ],
+    "alpha3Code": "NRU",
     "capital": "Yaren",
     "continent": "Oceania",
     "population": 10084,
@@ -5701,6 +5855,7 @@
     "topLevelDomain": [
       ".np"
     ],
+    "alpha3Code": "NPL",
     "capital": "Kathmandu",
     "continent": "Asia",
     "population": 28431500,
@@ -5734,6 +5889,7 @@
     "topLevelDomain": [
       ".nl"
     ],
+    "alpha3Code": "NLD",
     "capital": "Amsterdam",
     "continent": "Europe",
     "population": 17019800,
@@ -5767,6 +5923,7 @@
     "topLevelDomain": [
       ".nc"
     ],
+    "alpha3Code": "NCL",
     "capital": "Nouméa",
     "continent": "Oceania",
     "population": 268767,
@@ -5803,6 +5960,7 @@
     "topLevelDomain": [
       ".nz"
     ],
+    "alpha3Code": "NZL",
     "capital": "Wellington",
     "continent": "Oceania",
     "population": 4697854,
@@ -5833,6 +5991,7 @@
     "topLevelDomain": [
       ".ni"
     ],
+    "alpha3Code": "NIC",
     "capital": "Managua",
     "continent": "Americas",
     "population": 6262703,
@@ -5866,6 +6025,7 @@
     "topLevelDomain": [
       ".ne"
     ],
+    "alpha3Code": "NER",
     "capital": "Niamey",
     "continent": "Africa",
     "population": 20715000,
@@ -5904,6 +6064,7 @@
     "topLevelDomain": [
       ".ng"
     ],
+    "alpha3Code": "NGA",
     "capital": "Abuja",
     "continent": "Africa",
     "population": 186988000,
@@ -5944,6 +6105,7 @@
     "topLevelDomain": [
       ".nu"
     ],
+    "alpha3Code": "NIU",
     "capital": "Alofi",
     "continent": "Oceania",
     "population": 1470,
@@ -5974,6 +6136,7 @@
     "topLevelDomain": [
       ".nf"
     ],
+    "alpha3Code": "NFK",
     "capital": "Kingston",
     "continent": "Oceania",
     "population": 2302,
@@ -6004,6 +6167,7 @@
     "topLevelDomain": [
       ".kp"
     ],
+    "alpha3Code": "PRK",
     "capital": "Pyongyang",
     "continent": "Asia",
     "population": 25281000,
@@ -6044,6 +6208,7 @@
     "topLevelDomain": [
       ".mp"
     ],
+    "alpha3Code": "MNP",
     "capital": "Saipan",
     "continent": "Oceania",
     "population": 56940,
@@ -6086,6 +6251,7 @@
     "topLevelDomain": [
       ".no"
     ],
+    "alpha3Code": "NOR",
     "capital": "Oslo",
     "continent": "Europe",
     "population": 5223256,
@@ -6120,6 +6286,7 @@
     "topLevelDomain": [
       ".om"
     ],
+    "alpha3Code": "OMN",
     "capital": "Muscat",
     "continent": "Asia",
     "population": 4420133,
@@ -6160,6 +6327,7 @@
     "topLevelDomain": [
       ".pk"
     ],
+    "alpha3Code": "PAK",
     "capital": "Islamabad",
     "continent": "Asia",
     "population": 194125062,
@@ -6195,6 +6363,7 @@
     "topLevelDomain": [
       ".pw"
     ],
+    "alpha3Code": "PLW",
     "capital": "Ngerulmud",
     "continent": "Oceania",
     "population": 17950,
@@ -6235,6 +6404,7 @@
     "topLevelDomain": [
       ".ps"
     ],
+    "alpha3Code": "PSE",
     "capital": "Ramallah",
     "continent": "Asia",
     "population": 5159076,
@@ -6274,6 +6444,7 @@
     "topLevelDomain": [
       ".pa"
     ],
+    "alpha3Code": "PAN",
     "capital": "Panama City",
     "continent": "Americas",
     "population": 3814672,
@@ -6307,6 +6478,7 @@
     "topLevelDomain": [
       ".pg"
     ],
+    "alpha3Code": "PNG",
     "capital": "Port Moresby",
     "continent": "Oceania",
     "population": 8083700,
@@ -6345,6 +6517,7 @@
     "topLevelDomain": [
       ".py"
     ],
+    "alpha3Code": "PRY",
     "capital": "Asunción",
     "continent": "Americas",
     "population": 6854536,
@@ -6379,6 +6552,7 @@
     "topLevelDomain": [
       ".pe"
     ],
+    "alpha3Code": "PER",
     "capital": "Lima",
     "continent": "Americas",
     "population": 31488700,
@@ -6415,6 +6589,7 @@
     "topLevelDomain": [
       ".ph"
     ],
+    "alpha3Code": "PHL",
     "capital": "Manila",
     "continent": "Asia",
     "population": 103279800,
@@ -6450,6 +6625,7 @@
     "topLevelDomain": [
       ".pn"
     ],
+    "alpha3Code": "PCN",
     "capital": "Adamstown",
     "continent": "Oceania",
     "population": 56,
@@ -6480,6 +6656,7 @@
     "topLevelDomain": [
       ".pl"
     ],
+    "alpha3Code": "POL",
     "capital": "Warsaw",
     "continent": "Europe",
     "population": 38437239,
@@ -6518,6 +6695,7 @@
     "topLevelDomain": [
       ".pt"
     ],
+    "alpha3Code": "PRT",
     "capital": "Lisbon",
     "continent": "Europe",
     "population": 10374822,
@@ -6556,6 +6734,7 @@
     "topLevelDomain": [
       ".pr"
     ],
+    "alpha3Code": "PRI",
     "capital": "San Juan",
     "continent": "Americas",
     "population": 3474182,
@@ -6586,6 +6765,7 @@
     "topLevelDomain": [
       ".qa"
     ],
+    "alpha3Code": "QAT",
     "capital": "Doha",
     "continent": "Asia",
     "population": 2587564,
@@ -6624,6 +6804,7 @@
     "topLevelDomain": [
       ""
     ],
+    "alpha3Code": "KOS",
     "capital": "Pristina",
     "continent": "Europe",
     "population": 1733842,
@@ -6659,6 +6840,7 @@
     "topLevelDomain": [
       ".re"
     ],
+    "alpha3Code": "REU",
     "capital": "Saint-Denis",
     "continent": "Africa",
     "population": 840974,
@@ -6689,6 +6871,7 @@
     "topLevelDomain": [
       ".ro"
     ],
+    "alpha3Code": "ROU",
     "capital": "Bucharest",
     "continent": "Europe",
     "population": 19861408,
@@ -6725,6 +6908,7 @@
     "topLevelDomain": [
       ".ru"
     ],
+    "alpha3Code": "RUS",
     "capital": "Moscow",
     "continent": "Europe",
     "population": 146599183,
@@ -6782,6 +6966,7 @@
     "topLevelDomain": [
       ".rw"
     ],
+    "alpha3Code": "RWA",
     "capital": "Kigali",
     "continent": "Africa",
     "population": 11553188,
@@ -6817,6 +7002,7 @@
     "topLevelDomain": [
       ".bl"
     ],
+    "alpha3Code": "BLM",
     "capital": "Gustavia",
     "continent": "Americas",
     "population": 9417,
@@ -6847,6 +7033,7 @@
     "topLevelDomain": [
       ".sh"
     ],
+    "alpha3Code": "SHN",
     "capital": "Jamestown",
     "continent": "Africa",
     "population": 4255,
@@ -6877,6 +7064,7 @@
     "topLevelDomain": [
       ".kn"
     ],
+    "alpha3Code": "KNA",
     "capital": "Basseterre",
     "continent": "Americas",
     "population": 46204,
@@ -6907,6 +7095,7 @@
     "topLevelDomain": [
       ".lc"
     ],
+    "alpha3Code": "LCA",
     "capital": "Castries",
     "continent": "Americas",
     "population": 186000,
@@ -6951,6 +7140,7 @@
       ".fr",
       ".gp"
     ],
+    "alpha3Code": "MAF",
     "capital": "Marigot",
     "continent": "Americas",
     "population": 36979,
@@ -6984,6 +7174,7 @@
     "topLevelDomain": [
       ".pm"
     ],
+    "alpha3Code": "SPM",
     "capital": "Saint-Pierre",
     "continent": "Americas",
     "population": 6069,
@@ -7014,6 +7205,7 @@
     "topLevelDomain": [
       ".vc"
     ],
+    "alpha3Code": "VCT",
     "capital": "Kingstown",
     "continent": "Americas",
     "population": 109991,
@@ -7050,6 +7242,7 @@
     "topLevelDomain": [
       ".ws"
     ],
+    "alpha3Code": "WSM",
     "capital": "Apia",
     "continent": "Oceania",
     "population": 194899,
@@ -7080,6 +7273,7 @@
     "topLevelDomain": [
       ".sm"
     ],
+    "alpha3Code": "SMR",
     "capital": "City of San Marino",
     "continent": "Europe",
     "population": 33005,
@@ -7112,6 +7306,7 @@
     "topLevelDomain": [
       ".st"
     ],
+    "alpha3Code": "STP",
     "capital": "São Tomé",
     "continent": "Africa",
     "population": 187356,
@@ -7142,6 +7337,7 @@
     "topLevelDomain": [
       ".sa"
     ],
+    "alpha3Code": "SAU",
     "capital": "Riyadh",
     "continent": "Asia",
     "population": 32248200,
@@ -7180,6 +7376,7 @@
     "topLevelDomain": [
       ".sn"
     ],
+    "alpha3Code": "SEN",
     "capital": "Dakar",
     "continent": "Africa",
     "population": 14799859,
@@ -7216,6 +7413,7 @@
     "topLevelDomain": [
       ".rs"
     ],
+    "alpha3Code": "SRB",
     "capital": "Belgrade",
     "continent": "Europe",
     "population": 7076372,
@@ -7261,6 +7459,7 @@
     "topLevelDomain": [
       ".sc"
     ],
+    "alpha3Code": "SYC",
     "capital": "Victoria",
     "continent": "Africa",
     "population": 91400,
@@ -7291,6 +7490,7 @@
     "topLevelDomain": [
       ".sl"
     ],
+    "alpha3Code": "SLE",
     "capital": "Freetown",
     "continent": "Africa",
     "population": 7075641,
@@ -7347,6 +7547,7 @@
     "topLevelDomain": [
       ".sg"
     ],
+    "alpha3Code": "SGP",
     "capital": "Singapore",
     "continent": "Asia",
     "population": 5535000,
@@ -7383,6 +7584,7 @@
     "topLevelDomain": [
       ".sx"
     ],
+    "alpha3Code": "SXM",
     "capital": "Philipsburg",
     "continent": "Americas",
     "population": 38247,
@@ -7415,6 +7617,7 @@
     "topLevelDomain": [
       ".sk"
     ],
+    "alpha3Code": "SVK",
     "capital": "Bratislava",
     "continent": "Europe",
     "population": 5426252,
@@ -7451,6 +7654,7 @@
     "topLevelDomain": [
       ".si"
     ],
+    "alpha3Code": "SVN",
     "capital": "Ljubljana",
     "continent": "Europe",
     "population": 2064188,
@@ -7486,6 +7690,7 @@
     "topLevelDomain": [
       ".sb"
     ],
+    "alpha3Code": "SLB",
     "capital": "Honiara",
     "continent": "Oceania",
     "population": 642000,
@@ -7522,6 +7727,7 @@
     "topLevelDomain": [
       ".so"
     ],
+    "alpha3Code": "SOM",
     "capital": "Mogadishu",
     "continent": "Africa",
     "population": 11079000,
@@ -7610,6 +7816,7 @@
     "topLevelDomain": [
       ".za"
     ],
+    "alpha3Code": "ZAF",
     "capital": "Pretoria",
     "continent": "Africa",
     "population": 55653654,
@@ -7647,6 +7854,7 @@
     "topLevelDomain": [
       ".gs"
     ],
+    "alpha3Code": "SGS",
     "capital": "King Edward Point",
     "continent": "Americas",
     "population": 30,
@@ -7677,6 +7885,7 @@
     "topLevelDomain": [
       ".kr"
     ],
+    "alpha3Code": "KOR",
     "capital": "Seoul",
     "continent": "Asia",
     "population": 50801405,
@@ -7709,6 +7918,7 @@
     "topLevelDomain": [
       ".ss"
     ],
+    "alpha3Code": "SSD",
     "capital": "Juba",
     "continent": "Africa",
     "population": 12131000,
@@ -7746,6 +7956,7 @@
     "topLevelDomain": [
       ".es"
     ],
+    "alpha3Code": "ESP",
     "capital": "Madrid",
     "continent": "Europe",
     "population": 46438422,
@@ -7788,6 +7999,7 @@
     "topLevelDomain": [
       ".lk"
     ],
+    "alpha3Code": "LKA",
     "capital": "Sri Jayawardenepura Kotte",
     "continent": "Asia",
     "population": 20966000,
@@ -7826,6 +8038,7 @@
     "topLevelDomain": [
       ".sd"
     ],
+    "alpha3Code": "SDN",
     "capital": "Khartoum",
     "continent": "Africa",
     "population": 39598700,
@@ -7864,6 +8077,7 @@
     "topLevelDomain": [
       ".sr"
     ],
+    "alpha3Code": "SUR",
     "capital": "Paramaribo",
     "continent": "Americas",
     "population": 541638,
@@ -7899,6 +8113,7 @@
     "topLevelDomain": [
       ".sj"
     ],
+    "alpha3Code": "SJM",
     "capital": "Longyearbyen",
     "continent": "Europe",
     "population": 2562,
@@ -7935,6 +8150,7 @@
     "topLevelDomain": [
       ".sz"
     ],
+    "alpha3Code": "SWZ",
     "capital": "Lobamba",
     "continent": "Africa",
     "population": 1132657,
@@ -7968,6 +8184,7 @@
     "topLevelDomain": [
       ".se"
     ],
+    "alpha3Code": "SWE",
     "capital": "Stockholm",
     "continent": "Europe",
     "population": 9894888,
@@ -8017,6 +8234,7 @@
     "topLevelDomain": [
       ".ch"
     ],
+    "alpha3Code": "CHE",
     "capital": "Bern",
     "continent": "Europe",
     "population": 8341600,
@@ -8053,6 +8271,7 @@
     "topLevelDomain": [
       ".sy"
     ],
+    "alpha3Code": "SYR",
     "capital": "Damascus",
     "continent": "Asia",
     "population": 18564000,
@@ -8089,6 +8308,7 @@
     "topLevelDomain": [
       ".tw"
     ],
+    "alpha3Code": "TWN",
     "capital": "Taipei",
     "continent": "Asia",
     "population": 23503349,
@@ -8125,6 +8345,7 @@
     "topLevelDomain": [
       ".tj"
     ],
+    "alpha3Code": "TJK",
     "capital": "Dushanbe",
     "continent": "Asia",
     "population": 8593600,
@@ -8166,6 +8387,7 @@
     "topLevelDomain": [
       ".tz"
     ],
+    "alpha3Code": "TZA",
     "capital": "Dodoma",
     "continent": "Africa",
     "population": 55155000,
@@ -8205,6 +8427,7 @@
     "topLevelDomain": [
       ".th"
     ],
+    "alpha3Code": "THA",
     "capital": "Bangkok",
     "continent": "Asia",
     "population": 65327652,
@@ -8240,6 +8463,7 @@
     "topLevelDomain": [
       ".tl"
     ],
+    "alpha3Code": "TLS",
     "capital": "Dili",
     "continent": "Asia",
     "population": 1167242,
@@ -8272,6 +8496,7 @@
     "topLevelDomain": [
       ".tg"
     ],
+    "alpha3Code": "TGO",
     "capital": "Lomé",
     "continent": "Africa",
     "population": 7143000,
@@ -8306,6 +8531,7 @@
     "topLevelDomain": [
       ".tk"
     ],
+    "alpha3Code": "TKL",
     "capital": "Fakaofo",
     "continent": "Oceania",
     "population": 1411,
@@ -8342,6 +8568,7 @@
     "topLevelDomain": [
       ".to"
     ],
+    "alpha3Code": "TON",
     "capital": "Nuku'alofa",
     "continent": "Oceania",
     "population": 103252,
@@ -8372,6 +8599,7 @@
     "topLevelDomain": [
       ".tt"
     ],
+    "alpha3Code": "TTO",
     "capital": "Port of Spain",
     "continent": "Americas",
     "population": 1349667,
@@ -8402,6 +8630,7 @@
     "topLevelDomain": [
       ".tn"
     ],
+    "alpha3Code": "TUN",
     "capital": "Tunis",
     "continent": "Africa",
     "population": 11154400,
@@ -8435,6 +8664,7 @@
     "topLevelDomain": [
       ".tr"
     ],
+    "alpha3Code": "TUR",
     "capital": "Ankara",
     "continent": "Asia",
     "population": 78741053,
@@ -8480,6 +8710,7 @@
     "topLevelDomain": [
       ".tm"
     ],
+    "alpha3Code": "TKM",
     "capital": "Ashgabat",
     "continent": "Asia",
     "population": 4751120,
@@ -8515,6 +8746,7 @@
     "topLevelDomain": [
       ".tc"
     ],
+    "alpha3Code": "TCA",
     "capital": "Cockburn Town",
     "continent": "Americas",
     "population": 31458,
@@ -8550,6 +8782,7 @@
     "topLevelDomain": [
       ".tv"
     ],
+    "alpha3Code": "TUV",
     "capital": "Funafuti",
     "continent": "Oceania",
     "population": 10640,
@@ -8586,6 +8819,7 @@
     "topLevelDomain": [
       ".ug"
     ],
+    "alpha3Code": "UGA",
     "capital": "Kampala",
     "continent": "Africa",
     "population": 33860700,
@@ -8622,6 +8856,7 @@
     "topLevelDomain": [
       ".ua"
     ],
+    "alpha3Code": "UKR",
     "capital": "Kyiv",
     "continent": "Europe",
     "population": 42692393,
@@ -8660,6 +8895,7 @@
     "topLevelDomain": [
       ".ae"
     ],
+    "alpha3Code": "ARE",
     "capital": "Abu Dhabi",
     "continent": "Asia",
     "population": 9856000,
@@ -8693,6 +8929,7 @@
     "topLevelDomain": [
       ".uk"
     ],
+    "alpha3Code": "GBR",
     "capital": "London",
     "continent": "Europe",
     "population": 65110000,
@@ -8725,6 +8962,7 @@
     "topLevelDomain": [
       ".us"
     ],
+    "alpha3Code": "USA",
     "capital": "Washington, D.C.",
     "continent": "Americas",
     "population": 323947000,
@@ -8758,6 +8996,7 @@
     "topLevelDomain": [
       ".uy"
     ],
+    "alpha3Code": "URY",
     "capital": "Montevideo",
     "continent": "Americas",
     "population": 3480222,
@@ -8797,6 +9036,7 @@
     "topLevelDomain": [
       ".uz"
     ],
+    "alpha3Code": "UZB",
     "capital": "Tashkent",
     "continent": "Asia",
     "population": 31576400,
@@ -8845,6 +9085,7 @@
     "topLevelDomain": [
       ".vu"
     ],
+    "alpha3Code": "VUT",
     "capital": "Port Vila",
     "continent": "Oceania",
     "population": 277500,
@@ -8875,6 +9116,7 @@
     "topLevelDomain": [
       ".ve"
     ],
+    "alpha3Code": "VEN",
     "capital": "Caracas",
     "continent": "Americas",
     "population": 31028700,
@@ -8909,6 +9151,7 @@
     "topLevelDomain": [
       ".vn"
     ],
+    "alpha3Code": "VNM",
     "capital": "Hanoi",
     "continent": "Asia",
     "population": 92700000,
@@ -8943,6 +9186,7 @@
     "topLevelDomain": [
       ".wf"
     ],
+    "alpha3Code": "WLF",
     "capital": "Mata-Utu",
     "continent": "Oceania",
     "population": 11750,
@@ -8978,6 +9222,7 @@
     "topLevelDomain": [
       ".eh"
     ],
+    "alpha3Code": "ESH",
     "capital": "El Aaiún",
     "continent": "Africa",
     "population": 510713,
@@ -9012,6 +9257,7 @@
     "topLevelDomain": [
       ".ye"
     ],
+    "alpha3Code": "YEM",
     "capital": "Sana'a",
     "continent": "Asia",
     "population": 27478000,
@@ -9045,6 +9291,7 @@
     "topLevelDomain": [
       ".zm"
     ],
+    "alpha3Code": "ZMB",
     "capital": "Lusaka",
     "continent": "Africa",
     "population": 15933883,
@@ -9096,6 +9343,7 @@
     "topLevelDomain": [
       ".zw"
     ],
+    "alpha3Code": "ZWE",
     "capital": "Harare",
     "continent": "Africa",
     "population": 14240168,
@@ -9141,6 +9389,7 @@
     "topLevelDomain": [
       ".ps"
     ],
+    "alpha3Code": "HKG",
     "capital": "Ramallah",
     "continent": "Asia",
     "population": 5159076,
