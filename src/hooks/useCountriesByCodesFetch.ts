@@ -18,6 +18,7 @@ const useCountriesByCodesFetch: (params: CountriesByRegionFetchParams) => FetchR
   // TODO - workaround for broken API
   if (!data && params?.codes) {
     data = (countriesWithDetails as Country[]).filter((x) => params?.codes.includes(x.alpha3Code));
+    data = data.length ? data : undefined;
     error = undefined;
   }
 

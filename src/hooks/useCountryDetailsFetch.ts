@@ -21,6 +21,7 @@ const useCountryDetailsFetch: (params?: CountryDetailsFetchParams) => FetchRespo
   // TODO - workaround for broken API
   if (!data && params?.fullName) {
     data = (countriesWithDetails as Country[]).filter((x) => x.name === params?.fullName);
+    data = data.length ? data : undefined;
     error = undefined;
   }
   return [data, error];

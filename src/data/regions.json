@@ -15,6 +15,9 @@
     "region": "Oceania"
   },
   {
-    "region": "Antarctic"
+    "region": "Antarctic Ocean"
+  },
+  {
+    "region": "Polar"
   }
 ]
