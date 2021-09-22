@@ -1,6 +1,7 @@
 /** @jsx jsx */
 import type { FC } from 'react';
 import { jsx, Grid, Card, AspectImage, Box, Heading, Text, Message } from 'theme-ui';
+import { Link } from 'wouter';
 import type { BaseComponent, Country } from '../typings';
 
 const CountryList: FC<BaseComponent & { data: Country[] | undefined }> = ({ data, ...props }) => {
@@ -9,7 +10,9 @@ const CountryList: FC<BaseComponent & { data: Country[] | undefined }> = ({ data
       {data && data.length ? (
         data.map(({ flag, name, population, region, capital, flags, continent }) => (
           <Card as="li" key={name}>
-            <AspectImage className="list-country--image" ratio={3 / 2} src={flag || flags[0]} />
+            <Link href={`/country-details/${name}`}>
+              <AspectImage className="list-country--image" ratio={3 / 2} src={flag || flags[0]} />
+            </Link>
             <Box px={4} py={4}>
               <Heading as="h3" mb={4}>
                 {name}
