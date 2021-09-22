@@ -95,55 +95,69 @@ const CountryDetails: FC<BaseComponent & { params: Record<string, string> }> = (
           >
             <Box
               sx={{
-                width: ['full', 'full', '1/2'],
+                width: ['full', null, '1/2'],
                 py: [5, 4],
                 pr: [5, 4],
               }}
             >
               <AspectImage className="list-country--image" ratio={3 / 2} src={flag || flags[0]} />
             </Box>
-            <Box
+            <Flex
               px={4}
               py={4}
               sx={{
-                width: ['full', 'full', '1/2'],
+                width: ['full', null, '1/2'],
+                flexWrap: 'wrap',
               }}
             >
-              <Heading as="h2" my={4}>
+              <Heading as="h2" my={4} sx={{ width: '100%' }}>
                 {name}
               </Heading>
-              <Text variant="value">
-                <Text variant="name">Native Name</Text>
-                {nativeName}
-              </Text>
-              <Text variant="value">
-                <Text variant="name">Population</Text>
-                {population.toLocaleString('en-SG')}
-              </Text>
-              <Text variant="value">
-                <Text variant="name">Region</Text>
-                {continent}
-              </Text>
-              <Text variant="value">
-                <Text variant="name">Sub Region</Text>
-                {subregion}
-              </Text>
-              <Text variant="value">
-                <Text variant="name">Capital</Text>
-                {capital}
-              </Text>
-              <Text variant="value">
-                <Text variant="name">Top Level Domain</Text>
-                {topLevelDomain}
-              </Text>
-              <Text variant="value">
-                <Text variant="name">currencies</Text>
-                {currencies.map((x) => x.name).join(', ')}
-              </Text>
-              <Text variant="value">
-                <Text variant="name">Languages</Text>
-                {languages.map((x) => x.name).join(', ')}
-              </Text>
+              <Box
+                sx={{
+                  width: ['full', null, null, '1/2'],
+                }}
+              >
+                <Text variant="value">
+                  <Text variant="name">Native Name</Text>
+                  {nativeName}
+                </Text>
+                <Text variant="value">
+                  <Text variant="name">Population</Text>
+                  {population.toLocaleString('en-SG')}
+                </Text>
+                <Text variant="value">
+                  <Text variant="name">Region</Text>
+                  {continent}
+                </Text>
+                <Text variant="value">
+                  <Text variant="name">Sub Region</Text>
+                  {subregion}
+                </Text>
+                <Text variant="value">
+                  <Text variant="name">Capital</Text>
+                  {capital}
+                </Text>
+              </Box>
+              <Box
+                sx={{
+                  width: ['full', null, null, '1/2'],
+                  mt: [4, null, null, 0],
+                }}
+              >
+                <Text variant="value">
+                  <Text variant="name">Top Level Domain</Text>
+                  {topLevelDomain}
+                </Text>
+                <Text variant="value">
+                  <Text variant="name">currencies</Text>
+                  {currencies.map((x) => x.name).join(', ')}
+                </Text>
+                <Text variant="value">
+                  <Text variant="name">Languages</Text>
+                  {languages.map((x) => x.name).join(', ')}
+                </Text>
+              </Box>
               <Flex
                 as="ul"
                 sx={{
@@ -172,7 +186,7 @@ const CountryDetails: FC<BaseComponent & { params: Record<string, string> }> = (
                   </li>
                 ))}
               </Flex>
-            </Box>
+            </Flex>
           </Flex>
         </Container>
       ) : null}
