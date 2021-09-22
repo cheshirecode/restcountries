@@ -17,6 +17,7 @@ const consts = {
     GET_ALL_COUNTRIES: '/v2/all',
     GET_COUNTRIES_BY_REGION: '/v2/continent',
     GET_COUNTRIES_BY_NAME: '/v2/name',
+    GET_COUNTRIES_DETAILS: '/v2/name',
   },
   COMMON_COUNTRY_FIELDS: ['flag', 'name', 'population', 'region', 'capital', 'flags', 'continent'],
   FIELDS_SEPARATOR: ',',

@@ -12,10 +12,18 @@ const MainRoute = () => (
   </Suspense>
 );
 
+const CountryDetails = lazy(() => import('./CountryDetails'));
+const CountryDetailsRoute: FC<BaseComponent & { params: Record<string, string> }> = ({ params }) => (
+  <Suspense fallback={<Spinner />}>
+    <CountryDetails params={params} className="layout--country-details" />
+  </Suspense>
+);
+
 const AllRoutes: FC<BaseComponent> = ({ className }) => {
   return (
     <Switch>
       <Route path="/" component={MainRoute}></Route>
+      <Route path="/country-details/:fullName" component={CountryDetailsRoute}></Route>
       <Route>
         <Alert role="alert">404</Alert>
       </Route>
