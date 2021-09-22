@@ -20,6 +20,7 @@ const CountryDetails: FC<BaseComponent & { params: Record<string, string> }> = (
     codes: [params.alpha3],
     fields: consts.DETAILED_COUNTRY_FIELDS,
   });
+
   if (!data) {
     data = byCodesData;
     error = byCodesError;
@@ -44,7 +45,7 @@ const CountryDetails: FC<BaseComponent & { params: Record<string, string> }> = (
   return (
     <ApiResponseHandler data={data} error={error}>
       {data ? (
-        <Container className={cx(className, 'country-details')}>
+        <Container className={cx(className, 'country-details')} data-testid="country-details">
           <Box>
             <Button px={4} onClick={goBack}>
               <span

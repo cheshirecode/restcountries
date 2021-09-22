@@ -12,7 +12,13 @@ const CountryList: FC<BaseComponent & { data: Country[] | undefined }> = ({ data
           <Card as="li" key={name}>
             <RouterLink href={`/country-details/full-name/${name}`}>
               <Link>
-                <AspectImage className="list-country--image" ratio={3 / 2} src={flag || flags[0]} />
+                <AspectImage
+                  className="list-country--image"
+                  ratio={3 / 2}
+                  src={flag || flags[0]}
+                  role="link"
+                  aria-label={name}
+                />
               </Link>
             </RouterLink>
             <Box px={4} py={4}>
