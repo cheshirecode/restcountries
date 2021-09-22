@@ -3,8 +3,6 @@ import type { FC } from 'react';
 import { jsx, ThemeProvider, Flex, Box, Spinner, Alert } from 'theme-ui';
 import ErrorBoundary from './components/ErrorBoundary';
 import Header from './components/Header';
-// import Main from './components/Main';
-import Footer from './components/Footer';
 import { Route, Switch } from 'wouter';
 import { Suspense, lazy } from 'react';
 import type { BaseComponent } from './typings';
@@ -42,10 +40,6 @@ const App: FC<BaseComponent> = ({ className }) => {
           as="main"
           data-testid="main"
           variant="layout.mainDebug" // TODO - use layout.main after working version
-          sx={{
-            flex: '1 1 auto',
-            py: 0,
-          }}
         >
           <ErrorBoundary>
             <Switch>
@@ -56,11 +50,7 @@ const App: FC<BaseComponent> = ({ className }) => {
             </Switch>
           </ErrorBoundary>
         </Box>
-        <Box as="footer" variant="layout.footer">
-          <ErrorBoundary>
-            <Footer data-testid="footer" className="layout--footer" />
-          </ErrorBoundary>
-        </Box>
+        <Box as="footer" variant="layout.footer"></Box>
       </Flex>
     </ThemeProvider>
   );
