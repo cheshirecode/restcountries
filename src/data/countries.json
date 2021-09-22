@@ -2726,16 +2726,5 @@
     "region": "Eastern Africa",
     "continent": "Africa",
     "population": 14240168
-  },
-  {
-    "flags": [
-      "https://restcountries.com/data/pse.svg",
-      "https://restcountries.com/data/png/pse.png"
-    ],
-    "name": "Palestine, State of",
-    "capital": "Ramallah",
-    "region": "Western Asia",
-    "continent": "Asia",
-    "population": 5159076
   }
 ]
