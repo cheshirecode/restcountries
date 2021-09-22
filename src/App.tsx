@@ -30,11 +30,7 @@ const App: FC<BaseComponent> = ({ className }) => {
               <Header className="layout--header" />
             </ErrorBoundary>
           </Box>
-          <Box
-            as="main"
-            data-testid="main"
-            variant="layout.mainDebug" // TODO - use layout.main after working version
-          >
+          <Box as="main" data-testid="main" variant="layout.main">
             <ErrorBoundary>
               <Routes />
             </ErrorBoundary>
