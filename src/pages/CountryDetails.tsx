@@ -5,6 +5,7 @@ import ApiResponseHandler from '../components/ApiResponseHandler';
 import { Link } from 'wouter';
 import useCountryDetailsFetch from '../hooks/useCountryDetailsFetch';
 import useCountriesByCodesFetch from '../hooks/useCountriesByCodesFetch';
+import consts from '../utils/const';
 import { cx } from '@emotion/css';
 
 import type { BaseComponent } from '../typings';
@@ -13,37 +14,11 @@ import type { Country } from '../typings/country';
 const CountryDetails: FC<BaseComponent & { params: Record<string, string> }> = ({ className, params }) => {
   let [data, error] = useCountryDetailsFetch({
     fullName: decodeURIComponent(params.fullName),
-    fields: [
-      'name',
-      'nativeName',
-      'population',
-      'continent',
-      'subregion',
-      'capital',
-      'topLevelDomain',
-      'currencies',
-      'languages',
-      'borders',
-      'flag',
-      'flags',
-    ],
+    fields: consts.DETAILED_COUNTRY_FIELDS,
   });
   const [byCodesData, byCodesError] = useCountriesByCodesFetch({
     codes: [params.alpha3],
-    fields: [
-      'name',
-      'nativeName',
-      'population',
-      'continent',
-      'subregion',
-      'capital',
-      'topLevelDomain',
-      'currencies',
-      'languages',
-      'borders',
-      'flag',
-      'flags',
-    ],
+    fields: consts.DETAILED_COUNTRY_FIELDS,
   });
   if (!data) {
     data = byCodesData;

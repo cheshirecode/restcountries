@@ -21,6 +21,20 @@ const consts = {
     GET_COUNTRIES_BY_CODES: '/v2/alpha',
   },
   COMMON_COUNTRY_FIELDS: ['flag', 'name', 'population', 'region', 'capital', 'flags', 'continent'],
+  DETAILED_COUNTRY_FIELDS: [
+    'name',
+    'nativeName',
+    'population',
+    'continent',
+    'subregion',
+    'capital',
+    'topLevelDomain',
+    'currencies',
+    'languages',
+    'borders',
+    'flag',
+    'flags',
+  ],
   FIELDS_SEPARATOR: ',',
 };
 
