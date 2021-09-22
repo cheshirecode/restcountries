@@ -174,7 +174,7 @@ const common = {
   },
   cards: {
     primary: {
-      maxWidth: [null, '22rem'],
+      maxWidth: [null, '22em'],
       backgroundColor: 'muted',
       listStyleType: 'none',
     },
