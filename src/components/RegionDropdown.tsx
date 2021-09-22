@@ -4,7 +4,7 @@ import type { FC } from 'react';
 import { jsx, Alert } from 'theme-ui';
 import Select from 'react-select';
 import type { CSSObject } from '@emotion/serialize';
-import useCountryListFetch from '../hooks/useCountryListFetch';
+import useRegionListFetch from '../hooks/useRegionListFetch';
 import ApiResponseHandler from './ApiResponseHandler';
 
 // eslint-disable-next-line @typescript-eslint/no-empty-function
@@ -16,17 +16,19 @@ export interface RegionDropdownProps {
 }
 
 const RegionDropdown: FC<RegionDropdownProps> = ({ className, region, onRegionChange = noop }) => {
-  const [data, error] = useCountryListFetch({
+  const [data, error] = useRegionListFetch({
     fields: ['region'],
   });
   // take all regions from country list and turn them into a list
   const regions = useMemo(() => [...new Set(data?.map((d) => d.region).filter((x) => x))], [data]);
   regions.sort();
-  const options: { id: string; value: string; label: string }[] = regions.map((x) => ({
+  const options: { id: string; value: string; label: string; isCurrent?: boolean }[] = regions.map((x) => ({
     id: x,
     value: x,
     label: x,
+    isCurrent: x === region,
   }));
+  const currentOption = options.filter((x) => x.isCurrent);
   const classNamePrefix = 'react-select';
   return (
     <ApiResponseHandler data={data} error={error}>
@@ -74,6 +76,7 @@ const RegionDropdown: FC<RegionDropdownProps> = ({ className, region, onRegionCh
               }
             }}
             isClearable
+            value={currentOption}
             data-testid="region-dropdown"
           />
         ) : (
