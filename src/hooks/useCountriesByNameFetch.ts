@@ -20,6 +20,7 @@ const useCountriesByNameFetch: (params: CountriesByNameFetchParams) => FetchResp
     data = (countries as Country[]).filter((x) =>
       x.name?.toLocaleLowerCase().includes(params?.name.toLocaleLowerCase()),
     );
+    data = data.length ? data : undefined;
     error = undefined;
   }
 

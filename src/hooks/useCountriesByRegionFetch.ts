@@ -20,6 +20,7 @@ const useCountriesByRegionFetch: (params: CountriesByRegionFetchParams) => Fetch
   // TODO - workaround for broken API
   if (!data && params?.region) {
     data = (countries as Country[]).filter((x) => x.continent === params?.region);
+    data = data.length ? data : undefined;
     error = undefined;
   }
 
