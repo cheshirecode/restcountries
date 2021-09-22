@@ -23,7 +23,9 @@ const AllRoutes: FC<BaseComponent> = ({ className }) => {
   return (
     <Switch>
       <Route path="/" component={MainRoute}></Route>
-      <Route path="/country-details/:fullName" component={CountryDetailsRoute}></Route>
+      <Route path="/country-details/full-name/:fullName" component={CountryDetailsRoute}></Route>
+      <Route path="/country-details/alpha3/:alpha3" component={CountryDetailsRoute}></Route>
+      <Route path="/country-details/*" component={CountryDetailsRoute}></Route>
       <Route>
         <Alert role="alert">404</Alert>
       </Route>

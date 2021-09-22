@@ -8,9 +8,9 @@ const CountryList: FC<BaseComponent & { data: Country[] | undefined }> = ({ data
   return (
     <Grid gap={4} width={['100%', '15rem']} data-testid={props['data-testid'] ?? 'country-list'} as="ul" pl={0}>
       {data && data.length ? (
-        data.map(({ flag, name, population, region, capital, flags, continent }) => (
+        data.map(({ flag, name, population, capital, flags, continent }) => (
           <Card as="li" key={name}>
-            <RouterLink href={`/country-details/${name}`}>
+            <RouterLink href={`/country-details/full-name/${name}`}>
               <Link>
                 <AspectImage className="list-country--image" ratio={3 / 2} src={flag || flags[0]} />
               </Link>

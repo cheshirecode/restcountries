@@ -17,11 +17,16 @@ const getCountryDetails: (name: string, fields?: string[]) => string = (fullName
   return getURI(`${consts.API_ENDPOINTS.GET_COUNTRIES_BY_NAME}/${fullName}?fullText=true`, fields);
 };
 
+const getCountryByCodes: (codes: string[], fields?: string[]) => string = (codes = [], fields = []) => {
+  return getURI(`${consts.API_ENDPOINTS.GET_COUNTRIES_BY_CODES}?codes=${codes.join()}`, fields);
+};
+
 const endpoints = {
   getAllCountries,
   getCountriesByRegion,
   getCountriesByName,
   getCountryDetails,
+  getCountryByCodes,
 };
 
 export default endpoints;
