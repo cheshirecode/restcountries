@@ -127,6 +127,7 @@ const common = {
   },
   colors: {
     text: '#000',
+    subText: '#b7b7b7',
     background: '#fafafa',
     primary: '#07c',
     secondary: '#30c',
@@ -135,6 +136,7 @@ const common = {
     modes: {
       dark: {
         text: '#fff',
+        subText: '#AAB3BB',
         background: '#222D37',
         primary: '#3cf',
         secondary: '#D6DCE1',
@@ -148,6 +150,9 @@ const common = {
       fontFamily: 'body',
       fontWeight: 'body',
     },
+    a: {
+      cursor: 'pointer',
+    },
   },
   layout: {
     root: {
@@ -160,11 +165,13 @@ const common = {
     main: {
       ...commonRootLayoutPaddings,
       flex: '1 1 auto',
+      backgroundColor: 'background',
     },
     mainDebug: {
       ...commonRootLayoutPaddings,
       flex: '1 1 auto',
       border: 'thin',
+      backgroundColor: 'background',
     },
     footer: {
       // flex: '0 1 auto',
@@ -191,6 +198,17 @@ const common = {
     muted: {
       color: 'text',
       bg: 'muted',
+    },
+  },
+  buttons: {
+    primary: {
+      cursor: 'pointer',
+      color: 'text',
+      bg: 'background',
+      '&:hover': {
+        bg: 'b5d5ff',
+      },
+      boxShadow: '0px 0px 2px var(--theme-ui-colors-text, black) inset',
     },
   },
 };
