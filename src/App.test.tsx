@@ -1,6 +1,5 @@
 import * as React from 'react';
 import { render, fireEvent, cleanup, waitFor } from '@testing-library/react';
-import { getByText, screen } from '@testing-library/dom';
 import { expect } from 'chai';
 import App from './App';
 
@@ -80,7 +79,7 @@ describe('<App>', () => {
   });
 
   it("click on a country's border countries should navigate to its details page", async () => {
-    const { getByText, getByTestId, container } = render(<App />);
+    const { getByTestId, container } = render(<App />);
     await waitFor(() => {
       const ukElement = container.querySelector('[aria-label*="United Kingdom"]');
       if (ukElement) {
