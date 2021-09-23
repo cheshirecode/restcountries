@@ -1,2 +1,2 @@
-let json = [{"region":"Americas"},{"region":"Asia"},{"region":"Africa"},{"region":"Europe"},{"region":"Oceania"},{"region":"Antarctic Ocean"},{"region":"Polar"}];
+let json = [{"continent":"Americas"},{"continent":"Asia"},{"continent":"Africa"},{"continent":"Europe"},{"continent":"Oceania"},{"continent":"Antarctic Ocean"},{"continent":"Polar"}];
 export default json;

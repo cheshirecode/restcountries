@@ -2,6 +2,7 @@
   "imports": {
     "@emotion/css": "./@emotion/css.js",
     "@emotion/styled": "./@emotion/styled.js",
+    "lodash": "./lodash.js",
     "lodash-es": "./lodash-es.js",
     "react": "./react.js",
     "react-dom": "./react-dom.js",
