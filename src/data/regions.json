@@ -1,23 +1,23 @@
 [
   {
-    "region": "Americas"
+    "continent": "Americas"
   },
   {
-    "region": "Asia"
+    "continent": "Asia"
   },
   {
-    "region": "Africa"
+    "continent": "Africa"
   },
   {
-    "region": "Europe"
+    "continent": "Europe"
   },
   {
-    "region": "Oceania"
+    "continent": "Oceania"
   },
   {
-    "region": "Antarctic Ocean"
+    "continent": "Antarctic Ocean"
   },
   {
-    "region": "Polar"
+    "continent": "Polar"
   }
 ]
