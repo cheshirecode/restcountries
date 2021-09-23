@@ -13,7 +13,7 @@ const useCountriesByNameFetch: (params: CountriesByNameFetchParams) => FetchResp
   params,
 ) => {
   let { data, error } = useFetch<Country[]>(
-    endpoints.getCountriesByName(params.name, params?.fields ?? consts.COMMON_COUNTRY_FIELDS),
+    params?.name ? endpoints.getCountriesByName(params.name, params?.fields ?? consts.COMMON_COUNTRY_FIELDS) : null,
   );
   // TODO - workaround for broken API
   if (!data) {

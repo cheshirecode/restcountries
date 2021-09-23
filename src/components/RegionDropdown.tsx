@@ -16,11 +16,9 @@ export interface RegionDropdownProps {
 }
 
 const RegionDropdown: FC<RegionDropdownProps> = ({ className, region, onRegionChange = noop }) => {
-  const [data, error] = useRegionListFetch({
-    fields: ['region'],
-  });
+  const [data, error] = useRegionListFetch();
   // take all regions from country list and turn them into a list
-  const regions = useMemo(() => [...new Set(data?.map((d) => d.region).filter((x) => x))], [data]);
+  const regions = useMemo(() => [...new Set(data?.map((d) => d.region ?? d.continent ?? '').filter((x) => x))], [data]);
   regions.sort();
   const options: { id: string; value: string; label: string; isCurrent?: boolean }[] = regions.map((x) => ({
     id: x,
