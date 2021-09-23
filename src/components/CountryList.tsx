@@ -8,8 +8,9 @@ const CountryList: FC<BaseComponent & { data: Country[] | undefined }> = ({ data
   return (
     <Grid gap={4} width={['100%', '15rem']} data-testid={props['data-testid'] ?? 'country-list'} as="ul" pl={0}>
       {data && data.length ? (
-        data.map(({ flag, name, population, capital, flags, continent }) => (
-          <Card as="li" key={name}>
+        data.map(({ flag, name, population, capital, flags, continent }, index) => (
+          // temporary hack to handle duplicate names at cost of perf issues with sorting since moving items around changes its indexes, thus the key changes...
+          <Card as="li" key={`${name}-${index}`}>
             <RouterLink href={`/country-details/full-name/${name}`}>
               <Link>
                 <AspectImage
