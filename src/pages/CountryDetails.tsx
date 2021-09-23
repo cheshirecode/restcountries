@@ -13,11 +13,11 @@ import type { Country } from '../typings/country';
 
 const CountryDetails: FC<BaseComponent & { params: Record<string, string> }> = ({ className, params }) => {
   let [data, error] = useCountryDetailsFetch({
-    fullName: decodeURIComponent(params.fullName),
+    fullName: params.fullName ? decodeURIComponent(params.fullName) : '',
     fields: consts.DETAILED_COUNTRY_FIELDS,
   });
   const [byCodesData, byCodesError] = useCountriesByCodesFetch({
-    codes: [params.alpha3],
+    codes: params.alpha3 ? [params.alpha3] : [],
     fields: consts.DETAILED_COUNTRY_FIELDS,
   });
 

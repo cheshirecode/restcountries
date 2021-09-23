@@ -13,7 +13,9 @@ const useCountriesByCodesFetch: (params: CountriesByRegionFetchParams) => FetchR
   params,
 ) => {
   let { data, error } = useFetch<Country[]>(
-    params?.codes ? endpoints.getCountryByCodes(params.codes, params?.fields ?? consts.COMMON_COUNTRY_FIELDS) : null,
+    params?.codes && params.codes.length > 0
+      ? endpoints.getCountryByCodes(params.codes, params?.fields ?? consts.COMMON_COUNTRY_FIELDS)
+      : null,
   );
   // TODO - workaround for broken API
   if (!data && params?.codes) {
