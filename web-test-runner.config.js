@@ -6,4 +6,10 @@ module.exports = {
     exclude: ['**/*/_snowpack/**/*', '**/*/*.config.*', '**/styles/**/*.css'],
   },
   plugins: [require('@snowpack/web-test-runner-plugin')()],
+  testFramework: {
+    config: {
+      ui: 'bdd',
+      timeout: '10000',
+    },
+  },
 };
