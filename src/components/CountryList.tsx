@@ -3,14 +3,16 @@ import type { FC } from 'react';
 import { jsx, Grid, Card, AspectImage, Box, Heading, Text, Message, Link } from 'theme-ui';
 import { Link as RouterLink } from 'wouter';
 import type { BaseComponent, Country } from '../typings';
+import { uniqBy } from 'lodash';
 
 const CountryList: FC<BaseComponent & { data: Country[] | undefined }> = ({ data, ...props }) => {
   return (
     <Grid gap={4} width={['100%', '15rem']} data-testid={props['data-testid'] ?? 'country-list'} as="ul" pl={0}>
       {data && data.length ? (
-        data.map(({ flag, name, population, capital, flags, continent }, index) => (
-          // temporary hack to handle duplicate names at cost of perf issues with sorting since moving items around changes its indexes, thus the key changes...
-          <Card as="li" key={`${name}-${index}`}>
+        // another client-side workaround for https://gitlab.com/amatos/rest-countries/-/issues/39
+        // TODO - migrate to v3 API later then remove uniqBy
+        uniqBy(data, (x) => x.name).map(({ flag, name, population, capital, flags, continent }, index) => (
+          <Card as="li" key={name}>
             <RouterLink href={`/country-details/full-name/${name}`}>
               <Link>
                 <AspectImage
