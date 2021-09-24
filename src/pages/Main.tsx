@@ -39,8 +39,8 @@ const Main: FC<BaseComponent> = ({ className }) => {
       >
         <Flex
           sx={{
-            minWidth: [null, '27em'],
-            width: ['full', 'auto'],
+            minWidth: [null, null, '27em'],
+            width: ['full', 'full', 'auto'],
           }}
         >
           <i

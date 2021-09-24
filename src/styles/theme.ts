@@ -181,9 +181,12 @@ const common = {
   },
   cards: {
     primary: {
-      maxWidth: [null, '22em'],
+      maxWidth: ['full', 'auto', '20rem'],
       backgroundColor: 'muted',
       listStyleType: 'none',
+      display: 'flex',
+      flexWrap: 'wrap',
+      flex: '1 0 100%',
     },
     full: {
       maxWidth: '100%',

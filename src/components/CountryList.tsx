@@ -14,7 +14,7 @@ const CountryList: FC<BaseComponent & { data: Country[] | undefined }> = ({ data
         uniqBy(data, (x) => x.name).map(({ flag, name, population, capital, flags, continent }, index) => (
           <Card as="li" key={name}>
             <RouterLink href={`/country-details/full-name/${name}`}>
-              <Link>
+              <Link sx={{ width: 'full' }}>
                 <AspectImage
                   className="list-country--image"
                   ratio={3 / 2}
