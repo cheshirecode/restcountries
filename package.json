@@ -65,5 +65,11 @@
       "eslint --cache --fix",
       "prettier --write"
     ]
+  },
+  "license": "UNLICENSE",
+  "private": true,
+  "engines": {
+    "npm": "~7",
+    "node": ">= 14"
   }
 }
