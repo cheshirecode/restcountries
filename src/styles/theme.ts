@@ -1,9 +1,6 @@
 const commonRootLayoutPaddings = {
-  pl: [4, 4, 5, 5],
-  ml: [11, 11, 12, 12],
-  pr: [4, 5, 5, '8vw'],
-  mr: [11, 11, 12],
-  py: [4, 3],
+  px: [3, 4],
+  py: [3],
   width: 'full',
 };
 const common = {
@@ -162,9 +159,20 @@ const common = {
     root: {
       // root-level font size for typographic scale
       fontSize: [1, 2],
+      width: '100vw',
+      maxWidth: '90rem',
+      m: '0 auto',
     },
     header: {
-      ...commonRootLayoutPaddings,
+      py: [3],
+      // use offset based on max width
+      px: ['calc(max((100vw - 90rem) / 2 + 16px, 16px))', 'calc(max((100vw - 90rem) / 2 + 32px, 32px))'],
+      position: 'relative',
+      left: '50%',
+      right: '50%',
+      marginLeft: '-50vw',
+      marginRight: '-50vw',
+      width: '100vw',
     },
     main: {
       ...commonRootLayoutPaddings,

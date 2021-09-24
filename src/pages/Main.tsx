@@ -33,8 +33,8 @@ const Main: FC<BaseComponent> = ({ className }) => {
           // flexDirection: 'column',
           justifyContent: 'space-between',
           flexWrap: 'wrap',
-          pt: 4,
-          mb: [5, 4],
+          pt: 3,
+          mb: [4, 3],
         }}
       >
         <Flex
