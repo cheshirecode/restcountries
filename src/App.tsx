@@ -12,6 +12,7 @@ import theme from './styles/theme';
 const App: FC<BaseComponent> = ({ className }) => {
   return (
     <SWRConfig value={{ errorRetryCount: 1 }}>
+      {/* @ts-expect-error theme styling  */}
       <ThemeProvider theme={theme}>
         <Flex
           // additional class name for escape hatch if external styling is required outside the code

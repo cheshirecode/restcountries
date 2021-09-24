@@ -1,6 +1,10 @@
 const commonRootLayoutPaddings = {
-  px: [3, 4],
+  pl: [4, 4, 5, 5],
+  ml: [11, 11, 12, 12],
+  pr: [4, 5, 5, '8vw'],
+  mr: [11, 11, 12],
   py: [4, 3],
+  width: 'full',
 };
 const common = {
   fonts: {
@@ -10,10 +14,10 @@ const common = {
   },
   // using typographic scale, set a root-level font size and specific length in CSS units (relative - em or absolute - rem)
   fontSizes: [12, 14, 16, 20, 24, 32, 48, 64, 72],
-  // default breakpoints in CSS units 375px 896px 1440px
+  // default breakpoints in CSS units 375px 640px 896px 1440px
   breakpoints: ['23.4375em', '40em', '56em', '90em'],
   // base scale for use with layout-related CSS properties like margin, padding, grid-gap etc
-  space: [0, 4, 8, 16, 32, 64, 128, 256, 512],
+  space: [0, 4, 8, 16, 32, 64, 128, 256, 512, -4, -8, -16, -32, -64, -128, -256, -512], // (index + 8) for equivalent negative amount
   // base scale for use with width, height, min-width, max-width, min-height, max-height. values from from tailwind
   sizes: {
     '0': '0',
@@ -181,9 +185,9 @@ const common = {
   },
   cards: {
     primary: {
-      maxWidth: ['full', 'auto', '20rem'],
       backgroundColor: 'muted',
       listStyleType: 'none',
+      maxWidth: 'full',
       display: 'flex',
       flexWrap: 'wrap',
       flex: '1 0 100%',
