@@ -2,13 +2,16 @@
 import React from 'react';
 import type { FC } from 'react';
 import type { BaseComponent } from '../typings';
-import { jsx, Text, Flex } from 'theme-ui';
+import { jsx, Text, Flex, useThemeUI } from 'theme-ui';
 import { Link } from 'wouter';
 import MoonIcon from '../components/MoonIcon';
 import useColourMode from '../hooks/useColourMode';
 
 const Header: FC<BaseComponent> = ({ className }) => {
   const [colourMode, nextColour, onClickChangeColourMode] = useColourMode();
+  const {
+    theme: { breakpoints = [0] },
+  } = useThemeUI();
   return (
     <Flex
       sx={{
@@ -29,7 +32,15 @@ const Header: FC<BaseComponent> = ({ className }) => {
           Where in the world?
         </Text>
       </Link>
-      <Flex>
+      <Flex
+        sx={{
+          [`@media screen and (max-width: ${breakpoints[0]})`]: {
+            justifyContent: 'flex-start',
+            pt: 2,
+            minWidth: 48,
+          },
+        }}
+      >
         <MoonIcon
           sx={{
             ...(nextColour ? { cursor: 'pointer' } : {}),
