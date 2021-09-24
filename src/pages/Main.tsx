@@ -39,7 +39,7 @@ const Main: FC<BaseComponent> = ({ className }) => {
       >
         <Flex
           sx={{
-            minWidth: [null, null, '27em'],
+            // minWidth: [null, null, '27em'],
             width: ['full', 'full', 'auto'],
           }}
         >
@@ -75,8 +75,8 @@ const Main: FC<BaseComponent> = ({ className }) => {
           sx={{
             // override base values by writing the CSS later (order of apperance)
             minWidth: 32,
-            width: ['full', '48'],
-            mt: [5, 0, 0],
+            width: ['full', 'full', '48'],
+            mt: [5, 5, 0],
             height: '2.5rem',
           }}
           region={region}
