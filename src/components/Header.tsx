@@ -37,7 +37,7 @@ const Header: FC<BaseComponent> = ({ className }) => {
           [`@media screen and (max-width: ${breakpoints[0]})`]: {
             justifyContent: 'flex-start',
             pt: 2,
-            minWidth: 48,
+            minWidth: 56,
           },
         }}
       >
