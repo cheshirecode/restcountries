@@ -8,3 +8,4 @@ coverage
 Thumbs.db
 node_modules/
 .eslintcache
+build
