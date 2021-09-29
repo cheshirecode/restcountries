@@ -1,4 +1,4 @@
-[![test all branches except master](https://github.com/cheshirecode/restcountries/actions/workflows/base.yml/badge.svg)](https://github.com/cheshirecode/restcountries/actions/workflows/base.yml)
+[![test all branches except master](https://github.com/cheshirecode/restcountries/actions/workflows/base.yml/badge.svg)](https://github.com/cheshirecode/restcountries/actions/workflows/base.yml) [![Netlify Status](https://api.netlify.com/api/v1/badges/0338e9a8-b60c-4f0a-a1ed-7dcef9237558/deploy-status)](https://app.netlify.com/sites/loving-minsky-ace9dd/deploys)
 # Countries page
 
 ## Background
