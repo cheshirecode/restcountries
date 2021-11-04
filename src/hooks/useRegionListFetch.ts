@@ -9,8 +9,7 @@ export interface CountryListFetchParams {
 }
 /** fetches all countries with minimal fields based on what country list design is, can override from outside  */
 const useRegionListFetch: (params?: CountryListFetchParams) => FetchResponse<Country[], ErrorHttp> = (params) => {
-  let { data, error } = useFetch<Country[]>(endpoints.getAllCountries(['continent']));
-
+  let { data, error } = useFetch<Country[]>(endpoints.getAllCountries(['region']));
   // TODO - workaround for broken API
   if (!data) {
     data = regions as Country[];

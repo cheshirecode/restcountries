@@ -15,7 +15,7 @@ const consts = {
   API_BASE_URL: 'https://restcountries.com',
   API_ENDPOINTS: {
     GET_ALL_COUNTRIES: '/v2/all',
-    GET_COUNTRIES_BY_REGION: '/v2/continent',
+    GET_COUNTRIES_BY_REGION: '/v2/region',
     GET_COUNTRIES_BY_NAME: '/v2/name',
     GET_COUNTRIES_DETAILS: '/v2/name',
     GET_COUNTRIES_BY_CODES: '/v2/alpha',
@@ -25,6 +25,7 @@ const consts = {
     'name',
     'nativeName',
     'population',
+    'region',
     'continent',
     'subregion',
     'capital',
