@@ -1,6 +1,8 @@
 [![test all branches except master](https://github.com/cheshirecode/restcountries/actions/workflows/base.yml/badge.svg)](https://github.com/cheshirecode/restcountries/actions/workflows/base.yml) [![Netlify Status](https://api.netlify.com/api/v1/badges/0338e9a8-b60c-4f0a-a1ed-7dcef9237558/deploy-status)](https://app.netlify.com/sites/loving-minsky-ace9dd/deploys)
 # Countries page
-
+- Responsive list of countries in the world that is searchable and grouped by regions with details page for each country.
+- Persisted dark mode flag.
+- Public API from https://restcountries.com/
 ## Background
 I started by figuring out the approach to theming with design tokens as I used [styled-system and guiding specification](https://styled-system.com/theme-specification/) and other atomic libraries before (let's say Rebass + Emotion + TailwindCSS have better Developer Experience over Bootstrap/Antd) and really enjoyed the benefits in terms of mental models and code reusability. Data fetching and rendering tasks were much simpler by comparison as CRUD problems have been solved and re-thought over and over, plus the API surface for that is small and stable and the process straight forward - make HTTP calls, parse response into custom HTML. On the other hand, components are much more unforgiving in terms of usage, especially the more powerful and somewhat customisable ones like dropdown list or libraries like Bootstrap/Antd. Thus I approach the problem from the bottoms up - figuring out the building blocks and add more on top, slowly.
 
@@ -13,11 +15,6 @@ Reusable design system styles tokens like styling values (colours, fonts etc) an
 
 ### API models and handling
 I come up with Models as extendable Typescript interfaces as I go along the tasks, again with small building blocks and add more on top. To handle API calls, I use polyfilled native [fetch](https://github.com/developit/unfetch) with a small [wrapper](https://swr.vercel.app/) for caching and re-validation.
-
-#### No API requests currently
- - https://restcountries.eu/ is no more and redirects to a paid version.
- - Attempt to use https://restcountries.com/  got CORS error [issue](https://gitlab.com/amatos/rest-countries/-/issues/34)
-
 ### Tests
 I use the following
 - [Headless browser wrapper](https://modern-web.dev/docs/test-runner/overview/) 
